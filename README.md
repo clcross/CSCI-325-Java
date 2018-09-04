@@ -1,1 +1,1 @@
-# CSCI-325-FALL-2018
+# CSCI-325-fall-2018
