@@ -100,3 +100,4 @@ src/csu/csci325/Toner.java:49: error: reached end of file while parsing
  ^
 10 errors
 Compilation errors, please fix...
+Auto-grader grade: *****************Finished lab02****************
