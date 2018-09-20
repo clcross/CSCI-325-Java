@@ -21,14 +21,13 @@ public class CopyManager
     
     public CopyManager()
     {
-        paperCount = paperAmount.getAmount();
-        tonerCount = tonerAmount.getAmount();
+        
     }
     
     public int copyIt()
     {
         int RC;
-        if (paperCount > 0 && tonerCount > 0)
+        if (paperAmount.getAmount() > 0 && tonerAmount.getAmount() > 0)
         {
             RC = -1;
             totalCount++;
@@ -38,11 +37,11 @@ public class CopyManager
                 countSinceLast = 0;
             }
         }
-        else if (paperCount <= 0)
+        else if (paperAmount.getAmount() <= 0)
         {
             RC = -2;
         }
-        else if (tonerCount <= 0)
+        else if (tonerAmount.getAmount() <= 0)
         {
             RC = -3;
         }
