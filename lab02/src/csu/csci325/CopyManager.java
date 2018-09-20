@@ -40,12 +40,12 @@ public class CopyManager
             }
             else
             {
-                RC = -3;
+                RC = -2;
             }
         }
         else if (paperAmount.getAmount() == 0)
         {
-            RC = -2;
+            RC = -3;
         }
         else
         {
