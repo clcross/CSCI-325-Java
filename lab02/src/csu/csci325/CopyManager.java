@@ -11,11 +11,11 @@ package csu.csci325;
  * @author ccross190196
  */
 public class CopyManager
-{
-    private int totalCount;
-    private int countSinceLast;
+{    
     Paper paperAmount = new Paper(3000);
     Toner tonerAmount = new Toner();
+    private int totalCount;
+    private int countSinceLast;
     private int paperCount;
     private double tonerCount;
     
@@ -27,27 +27,41 @@ public class CopyManager
     
     public int copyIt()
     {
-        
-        if (paperAmount.decrementPaper())
+        int RC;
+        if (tonerAmount.getAmount() > 0)
         {
-            if (tonerAmount.decrementAmt())
+            if (paperAmount.getAmount() > 0)
             {
-                totalCount++;
-                return -1;
+                if (countSinceLast == 8)
+                {
+                    tonerAmount.decrementAmt();
+                    countSinceLast = 0;
+                    totalCount++;
+                    paperAmount.decrementPaper();
+                    RC = -1;
+                }
+                else
+                {
+                    countSinceLast++;
+                    totalCount++;
+                    paperAmount.decrementPaper();
+                    RC = -1;  
+                }
             }
             else
             {
-                return -3;
+                RC = -2;
             }
         }
-        else if (tonerAmount.getAmount() > 0)
+        else if (tonerAmount.getAmount() == 0)
         {
-            return -2;
+            RC = -3;
         }
         else
         {
-            return -5;
+            RC = -5;
         }
+        return RC;
     }
     
     public int getTotalCopiesMade()

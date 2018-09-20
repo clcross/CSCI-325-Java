@@ -29,28 +29,32 @@ public class Paper
     }
     public boolean incrementPaper(int amt)
     {
+        boolean tOrF;
         if ((amount + amt) <= MAX_PAPER)
         {
             amount += amt;
-            return true;
+            tOrF = true;
         }
         else
         {
-            return false;
+            tOrF = false;
         }
+        return tOrF;
     }
 
     public boolean decrementPaper()
     {
+        boolean tOrF;
         if ((amount - 1) >= 0)
         {
             amount -= 1;
-            return true;
+            tOrF = true;
         }
         else
         {
-            return false;
+            tOrF = false;
         }
+        return tOrF;
     }
 }
 
