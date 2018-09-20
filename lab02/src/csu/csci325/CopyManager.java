@@ -32,7 +32,7 @@ public class CopyManager
         {
             if (tonerAmount.decrementAmt())
             {
-                totalCount += 1;
+                totalCount++;
                 return -1;
             }
             else
