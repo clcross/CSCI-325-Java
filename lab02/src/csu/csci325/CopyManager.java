@@ -43,7 +43,7 @@ public class CopyManager
                 RC = -2;
             }
         }
-        else if (paperAmount.getAmount() == 0)
+        else if (tonerAmount.getAmount() == 0)
         {
             RC = -3;
         }
