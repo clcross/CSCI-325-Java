@@ -20,7 +20,7 @@ JUnit version 4.12
 E.getAmount- instantiates new Toner, amount =18
 .decrementAmt - amount = 0
 
-Time: 0.01
+Time: 0.012
 There was 1 failure:
 1) testIncrementByOne(csu.csci325.TonerTest)
 java.lang.AssertionError: expected:<false> but was:<true>
@@ -71,11 +71,9 @@ JUnit version 4.12
 .copyIt Test 1 - new CopyManager with full paper & toner.
 .getTotalCopiesMade Test 2
 
-Time: 0.009
+Time: 0.018
 
 OK (4 tests)
 
 + 33.334 pts of 33.334
 Total grade so far: 93.333
-Auto-grader grade: 93.333
-*****************Finished lab02****************
