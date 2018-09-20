@@ -77,3 +77,5 @@ Tests run: 4,  Failures: 1
 
 + 25.000 pts of 33.334
 Total grade so far: 91.666
+Auto-grader grade: 91.666
+*****************Finished lab02****************
