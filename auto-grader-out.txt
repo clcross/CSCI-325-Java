@@ -1,28 +1,2 @@
-I am run number 000434.
+I am run number 000435.
 Pulling source code...
-------------------------------------------------
-Changes found in lab02
-------------------------------------------------
-*****************Examining lab02****************
-******************* PART 1 Paper Test *********************
-*************COMPILATION ERROR*******************
-src/csu/csci325/CopyManager.java:59: error: variable RC might not have been initialized
-        return RC;
-               ^
-1 error
-Compilation errors, please fix...
-******************* PART 2 Toner Test *********************
-*************COMPILATION ERROR*******************
-src/csu/csci325/CopyManager.java:59: error: variable RC might not have been initialized
-        return RC;
-               ^
-1 error
-Compilation errors, please fix...
-******************* PART 3 CopyManager Test *********************
-*************COMPILATION ERROR*******************
-src/csu/csci325/CopyManager.java:59: error: variable RC might not have been initialized
-        return RC;
-               ^
-1 error
-Compilation errors, please fix...
-Auto-grader grade: *****************Finished lab02****************

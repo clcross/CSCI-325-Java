@@ -19,3 +19,4 @@ src/csu/csci325/CopyManager.java:59: error: variable RC might not have been init
                ^
 1 error
 Compilation errors, please fix...
+Auto-grader grade: *****************Finished lab02****************
