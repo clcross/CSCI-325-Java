@@ -31,6 +31,7 @@ public class CopyManager
         
         if (tonerAmount.getAmount() > 0)
         {
+            RC = -1;
 //            if (paperAmount.getAmount() > 0)
 //            {
 //                RC = -1;
