@@ -31,21 +31,21 @@ public class CopyManager
         
         if (tonerAmount.getAmount() > 0)
         {
-            if (paperAmount.getAmount() > 0)
-            {
-                RC = -1;
-                totalCount++;
-                paperAmount.decrementPaper();
-                countSinceLast++;
-                if ((countSinceLast % 8) == 0)
-                {
-                   tonerAmount.decrementAmt();
-                }
-            }
-            else
-            {
-                RC = -2;
-            }
+//            if (paperAmount.getAmount() > 0)
+//            {
+//                RC = -1;
+//                totalCount++;
+//                paperAmount.decrementPaper();
+//                countSinceLast++;
+//                if ((countSinceLast % 8) == 0)
+//                {
+//                   tonerAmount.decrementAmt();
+//                }
+//            }
+//            else
+//            {
+//                RC = -2;
+//            }
         }
         else if (tonerAmount.getAmount() <= 0)
         {
