@@ -29,9 +29,9 @@ public class CopyManager
     {
         int RC;
         
-        if (paperAmount.getAmount() > 0)
+        if (tonerAmount.getAmount() > 0)
         {
-            if (tonerAmount.getAmount() > 0)
+            if (paperAmount.getAmount() > 0)
             {
                 RC = -1;
                 totalCount++;
@@ -44,12 +44,12 @@ public class CopyManager
             }
             else
             {
-                RC = -3;
+                RC = -2;
             }
         }
-        else if (paperAmount.getAmount() <= 0)
+        else if (tonerAmount.getAmount() <= 0)
         {
-            RC = -2;
+            RC = -3;
         }
         else
         {
