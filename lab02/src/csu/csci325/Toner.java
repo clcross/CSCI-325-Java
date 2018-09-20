@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 package csu.csci325;
 
 /**
@@ -11,22 +12,22 @@ package csu.csci325;
  */
 public class Toner
 {
-    final int MAX_PAPER = 3000;
-    private int amt;
-    public int input;
+    final double MAX_AMOUNT = 18.0;
+    public double amt;
+    
     public Toner()
     {
-        Toner MAX_AMOUNT = new Toner
+        amt = MAX_AMOUNT;
     }
-    public int getAmount()
+    public double getAmount()
     {
         return amt;
     }
-    public boolean incrementPaper(int input)
+    public boolean incrementByOne()
     {
-        if ((amt + input) <= MAX_PAPER)
+        if ((amt + 1.0) <= MAX_AMOUNT)
         {
-            int incr = amt + input;
+            amt += 1.0;
             return true;
         }
         else
@@ -34,11 +35,11 @@ public class Toner
             return false;
         }
     }
-    public boolean decrementPaper()
+    public boolean decrementAmt()
     {
-        if ((amt - input) >= 0)
+        if ((amt - .05) >= 0)
         {
-            int decr = amt - input;
+            amt -= .05;
             return true;
         }
         else

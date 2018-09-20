@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 package csu.csci325;
 
 /**
@@ -12,9 +13,10 @@ package csu.csci325;
 public class Paper
 {
     final int MAX_PAPER = 3000;
-    private int amt;
+    public int amt;
     public int input;
-    public Paper(int input)
+    
+    public Paper(int amt)
     {
         amt = input;
         if (amt > MAX_PAPER)
@@ -30,7 +32,7 @@ public class Paper
     {
         if ((amt + input) <= MAX_PAPER)
         {
-            int incr = amt + input;
+            amt += input;
             return true;
         }
         else
@@ -38,11 +40,16 @@ public class Paper
             return false;
         }
     }
+
+    /**
+     *
+     * @return
+     */
     public boolean decrementPaper()
     {
-        if ((amt - input) >= 0)
+        if ((amt - 1) >= 0)
         {
-            int decr = amt - input;
+            amt -= 1;
             return true;
         }
         else
