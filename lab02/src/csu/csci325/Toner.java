@@ -27,7 +27,7 @@ public class Toner
     {
         boolean tOrF;
         
-        if ((amt++) <= MAX_AMOUNT)
+        if ((amt++) < MAX_AMOUNT)
         {
             amt++;
             tOrF = true;
