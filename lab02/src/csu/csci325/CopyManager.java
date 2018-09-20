@@ -12,43 +12,49 @@ package csu.csci325;
  */
 public class CopyManager
 {    
-    Paper paperAmount = new Paper(3000);
-    Toner tonerAmount = new Toner();
+    Paper paperAmount;
+    Toner tonerAmount;
     private int totalCount;
     private int countSinceLast;
-    private int paperCount;
-    private double tonerCount;
     
     public CopyManager()
     {
-        
+        tonerAmount = new Toner();
+        paperAmount = new Paper(3000);
+        totalCount = 0;
+        countSinceLast = 0;
     }
     
     public int copyIt()
     {
-        int RC = -1;
-//        if (paperAmount.getAmount() > 0 && tonerAmount.getAmount() > 0)
-//        {
-//            RC = -1;
-//            totalCount++;
-//            countSinceLast++;
-//            if (countSinceLast == 8)
-//            {
-//                countSinceLast = 0;
-//            }
-//        }
-//        else if (paperAmount.getAmount() <= 0)
-//        {
-//            RC = -2;
-//        }
-//        else if (tonerAmount.getAmount() <= 0)
-//        {
-//            RC = -3;
-//        }
-//        else
-//        {
-//            RC = -5;
-//        }
+        int RC;
+        
+        if (paperAmount.getAmount() > 0)
+        {
+            if (tonerAmount.getAmount() > 0)
+            {
+                RC = -1;
+                totalCount++;
+                paperAmount.decrementPaper();
+                countSinceLast++;
+                if ((countSinceLast % 8) == 0)
+                {
+                   tonerAmount.decrementAmt();
+                }
+            }
+            else
+            {
+                RC = -3;
+            }
+        }
+        else if (paperAmount.getAmount() <= 0)
+        {
+            RC = -2;
+        }
+        else
+        {
+            RC = -5;
+        }
         
         return RC;
     }
