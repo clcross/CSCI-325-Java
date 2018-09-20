@@ -13,26 +13,25 @@ package csu.csci325;
 public class Paper
 {
     final int MAX_PAPER = 3000;
-    public int amt;
-    public int input;
+    public int amount;
     
     public Paper(int amt)
     {
-        amt = input;
         if (amt > MAX_PAPER)
         {
             amt = MAX_PAPER;
         }
+        amount = amt;
     }
     public int getAmount()
     {
-        return amt;
+        return amount;
     }
-    public boolean incrementPaper(int input)
+    public boolean incrementPaper(int amt)
     {
-        if ((amt + input) <= MAX_PAPER)
+        if ((amount + amt) <= MAX_PAPER)
         {
-            amt += input;
+            amount += amt;
             return true;
         }
         else
@@ -41,15 +40,11 @@ public class Paper
         }
     }
 
-    /**
-     *
-     * @return
-     */
     public boolean decrementPaper()
     {
-        if ((amt - 1) >= 0)
+        if ((amount - 1) >= 0)
         {
-            amt -= 1;
+            amount -= 1;
             return true;
         }
         else
