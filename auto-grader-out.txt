@@ -1,2 +1,49 @@
 I am run number 000291.
 Pulling source code...
+------------------------------------------------
+Changes found in lab02
+------------------------------------------------
+*****************Examining lab02****************
+******************* PART 1 Paper Test *********************
+JUnit version 4.12
+.incrementPaper Test 2 - Paper object instantiated with 3000.incremented by 1.
+.incrementPaper Test 1 - Paper object instantiated with 250.incremented by 1.
+.getAmount - Paper object instantiated with 250.
+.decrementPaper Test 2 - Paper object instantiated with 0.
+.decrementPaper Test 1 - Paper object instantiated with 250.
+
+Time: 0.009
+
+OK (5 tests)
+
++ 33.333 pts of 33.333
+Total grade so far: 33.333
+******************* PART 2 Toner Test *********************
+JUnit version 4.12
+.decrementAmt - amount = 18
+.incrementByOne Test 2 - Toner, amount =16
+.incrementByOne Test 1 - instantiates new Toner, amount =18)
+.getAmount- instantiates new Toner, amount =18
+.decrementAmt - amount = 0
+
+Time: 0.009
+
+OK (5 tests)
+
++ 33.333 pts of 33.333
+Total grade so far: 66.666
+******************* PART 3 CopyManager Test *********************
+JUnit version 4.12
+.getTotalCopiesMade Test 1 - new CopyManager with full paper & toner.
+.copyIt Test 2 - invokes copyIt until copier runs out of toner.
+.copyIt Test 1 - new CopyManager with full paper & toner.
+.getTotalCopiesMade Test 2
+
+Time: 0.009
+
+OK (4 tests)
+
++ 33.334 pts of 33.334
+Total grade so far: 100.000
+Auto-grader grade: 100.000
+*****************Finished lab02****************
