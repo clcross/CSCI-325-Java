@@ -35,6 +35,7 @@ public class CopyManager
                 countSinceLast++;
                 totalCount++;
                 paperAmount.decrementPaper();
+                tonerAmount.decrementAmt();
                 RC = -1;
             }
             else
