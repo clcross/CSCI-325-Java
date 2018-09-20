@@ -1,0 +1,102 @@
+******************* PART 1 Paper Test *********************
+*************COMPILATION ERROR*******************
+src/csu/csci325/Toner.java:20: error: '(' or '[' expected
+    }
+    ^
+src/csu/csci325/Toner.java:21: error: illegal start of expression
+    public int getAmount()
+    ^
+src/csu/csci325/Toner.java:21: error: ';' expected
+    public int getAmount()
+          ^
+src/csu/csci325/Toner.java:21: error: ';' expected
+    public int getAmount()
+                          ^
+src/csu/csci325/Toner.java:25: error: illegal start of expression
+    public boolean incrementPaper(int input)
+    ^
+src/csu/csci325/Toner.java:25: error: ';' expected
+    public boolean incrementPaper(int input)
+                                 ^
+src/csu/csci325/Toner.java:25: error: ';' expected
+    public boolean incrementPaper(int input)
+                                           ^
+src/csu/csci325/Toner.java:37: error: illegal start of expression
+    public boolean decrementPaper()
+    ^
+src/csu/csci325/Toner.java:37: error: ';' expected
+    public boolean decrementPaper()
+                                 ^
+src/csu/csci325/Toner.java:49: error: reached end of file while parsing
+}
+ ^
+10 errors
+Compilation errors, please fix...
+******************* PART 2 Toner Test *********************
+*************COMPILATION ERROR*******************
+src/csu/csci325/Toner.java:20: error: '(' or '[' expected
+    }
+    ^
+src/csu/csci325/Toner.java:21: error: illegal start of expression
+    public int getAmount()
+    ^
+src/csu/csci325/Toner.java:21: error: ';' expected
+    public int getAmount()
+          ^
+src/csu/csci325/Toner.java:21: error: ';' expected
+    public int getAmount()
+                          ^
+src/csu/csci325/Toner.java:25: error: illegal start of expression
+    public boolean incrementPaper(int input)
+    ^
+src/csu/csci325/Toner.java:25: error: ';' expected
+    public boolean incrementPaper(int input)
+                                 ^
+src/csu/csci325/Toner.java:25: error: ';' expected
+    public boolean incrementPaper(int input)
+                                           ^
+src/csu/csci325/Toner.java:37: error: illegal start of expression
+    public boolean decrementPaper()
+    ^
+src/csu/csci325/Toner.java:37: error: ';' expected
+    public boolean decrementPaper()
+                                 ^
+src/csu/csci325/Toner.java:49: error: reached end of file while parsing
+}
+ ^
+10 errors
+Compilation errors, please fix...
+******************* PART 3 CopyManager Test *********************
+*************COMPILATION ERROR*******************
+src/csu/csci325/Toner.java:20: error: '(' or '[' expected
+    }
+    ^
+src/csu/csci325/Toner.java:21: error: illegal start of expression
+    public int getAmount()
+    ^
+src/csu/csci325/Toner.java:21: error: ';' expected
+    public int getAmount()
+          ^
+src/csu/csci325/Toner.java:21: error: ';' expected
+    public int getAmount()
+                          ^
+src/csu/csci325/Toner.java:25: error: illegal start of expression
+    public boolean incrementPaper(int input)
+    ^
+src/csu/csci325/Toner.java:25: error: ';' expected
+    public boolean incrementPaper(int input)
+                                 ^
+src/csu/csci325/Toner.java:25: error: ';' expected
+    public boolean incrementPaper(int input)
+                                           ^
+src/csu/csci325/Toner.java:37: error: illegal start of expression
+    public boolean decrementPaper()
+    ^
+src/csu/csci325/Toner.java:37: error: ';' expected
+    public boolean decrementPaper()
+                                 ^
+src/csu/csci325/Toner.java:49: error: reached end of file while parsing
+}
+ ^
+10 errors
+Compilation errors, please fix...
