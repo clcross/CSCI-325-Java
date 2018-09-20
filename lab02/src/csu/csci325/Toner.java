@@ -25,26 +25,32 @@ public class Toner
     }
     public boolean incrementByOne()
     {
-        if ((amt + 1.0) <= MAX_AMOUNT)
+        boolean tOrF;
+        
+        if ((amt++) <= MAX_AMOUNT)
         {
-            amt += 1.0;
-            return true;
+            amt++;
+            tOrF = true;
         }
         else
         {
-            return false;
+            tOrF = false;
         }
+        return tOrF;
     }
     public boolean decrementAmt()
     {
+        boolean tOrF;
+        
         if ((amt - .05) >= 0)
         {
             amt -= .05;
-            return true;
+            tOrF = true;
         }
         else
         {
-            return false;
+            tOrF = false;
         }
+        return tOrF;
     }
 }
