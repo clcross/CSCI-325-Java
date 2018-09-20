@@ -15,6 +15,7 @@ public class Toner
     final double MAX_AMOUNT = 18.0;
     public double amt;
     
+    
     public Toner()
     {
         amt = MAX_AMOUNT;
