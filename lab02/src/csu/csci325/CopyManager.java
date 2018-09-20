@@ -26,29 +26,29 @@ public class CopyManager
     
     public int copyIt()
     {
-        int RC;
-        if (paperAmount.getAmount() > 0 && tonerAmount.getAmount() > 0)
-        {
-            RC = -1;
-            totalCount++;
-            countSinceLast++;
-            if (countSinceLast == 8)
-            {
-                countSinceLast = 0;
-            }
-        }
-        else if (paperAmount.getAmount() <= 0)
-        {
-            RC = -2;
-        }
-        else if (tonerAmount.getAmount() <= 0)
-        {
-            RC = -3;
-        }
-        else
-        {
-            RC = -5;
-        }
+        int RC = -1;
+//        if (paperAmount.getAmount() > 0 && tonerAmount.getAmount() > 0)
+//        {
+//            RC = -1;
+//            totalCount++;
+//            countSinceLast++;
+//            if (countSinceLast == 8)
+//            {
+//                countSinceLast = 0;
+//            }
+//        }
+//        else if (paperAmount.getAmount() <= 0)
+//        {
+//            RC = -2;
+//        }
+//        else if (tonerAmount.getAmount() <= 0)
+//        {
+//            RC = -3;
+//        }
+//        else
+//        {
+//            RC = -5;
+//        }
         
         return RC;
     }
