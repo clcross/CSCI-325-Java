@@ -6,7 +6,7 @@ JUnit version 4.12
 .decrementPaper Test 2 - Paper object instantiated with 0.
 .decrementPaper Test 1 - Paper object instantiated with 250.
 
-Time: 0.007
+Time: 0.008
 
 OK (5 tests)
 
@@ -19,16 +19,29 @@ JUnit version 4.12
 .incrementByOne Test 1 - instantiates new Toner, amount =18)
 .getAmount- instantiates new Toner, amount =18
 .decrementAmt - amount = 0
-E
-Time: 0.01
+
+Time: 0.009
+
+OK (5 tests)
+
++ 33.333 pts of 33.333
+Total grade so far: 66.666
+******************* PART 3 CopyManager Test *********************
+JUnit version 4.12
+.getTotalCopiesMade Test 1 - new CopyManager with full paper & toner.
+.copyIt Test 2 - invokes copyIt until copier runs out of toner.
+E.copyIt Test 1 - new CopyManager with full paper & toner.
+.getTotalCopiesMade Test 2
+
+Time: 0.016
 There was 1 failure:
-1) testDecrementAmt2(csu.csci325.TonerTest)
-java.lang.AssertionError: expected:<false> but was:<true>
+1) testCopyIt2(csu.csci325.CopyManagerTest)
+java.lang.AssertionError: expected:<-3> but was:<-2>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
-	at org.junit.Assert.assertEquals(Assert.java:118)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at csu.csci325.TonerTest.testDecrementAmt2(TonerTest.java:109)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at csu.csci325.CopyManagerTest.testCopyIt2(CopyManagerTest.java:88)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -60,22 +73,7 @@ java.lang.AssertionError: expected:<false> but was:<true>
 	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
 
 FAILURES!!!
-Tests run: 5,  Failures: 1
+Tests run: 4,  Failures: 1
 
-+ 26.666 pts of 33.333
-Total grade so far: 59.999
-******************* PART 3 CopyManager Test *********************
-JUnit version 4.12
-.getTotalCopiesMade Test 1 - new CopyManager with full paper & toner.
-.copyIt Test 2 - invokes copyIt until copier runs out of toner.
-.copyIt Test 1 - new CopyManager with full paper & toner.
-.getTotalCopiesMade Test 2
-
-Time: 0.011
-
-OK (4 tests)
-
-+ 33.334 pts of 33.334
-Total grade so far: 93.333
-Auto-grader grade: 93.333
-*****************Finished lab02****************
++ 25.000 pts of 33.334
+Total grade so far: 91.666
