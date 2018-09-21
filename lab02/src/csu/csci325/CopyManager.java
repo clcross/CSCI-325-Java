@@ -29,7 +29,7 @@ public class CopyManager
     {
         int RC;
         
-        if (myToner.getAmount() > 0)
+        if (myToner.getAmount() > .05)
         {
             if (myPaper.getAmount() > 0)
             {
@@ -47,7 +47,7 @@ public class CopyManager
                 RC = -2;
             }
         }
-        else if (myToner.getAmount() <= 0)
+        else if (myToner.getAmount() <= .05)
         {
             RC = -3;
         }
