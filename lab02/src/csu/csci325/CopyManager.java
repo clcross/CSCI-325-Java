@@ -17,6 +17,11 @@ public class CopyManager
     private int totalCount;
     private int countSinceLast;
     
+    // Constructs a new CopyManager object. Initializes the following member 
+    // variables: Two different count variables, overall total count and count
+    // since last toner reduction, are initialized to 0. For the Paper member
+    // variable, a new Paper object is instantiated with 3000 pages. For the
+    // Toner member variable, a new Toner object is instantiated.
     public CopyManager()
     {
         myToner = new Toner();
@@ -25,10 +30,14 @@ public class CopyManager
         countSinceLast = 0;
     }
     
+    // This class simulates making a copy
     public int copyIt()
     {
         int RC;
         
+        // -1 if the copy was made successfully, -2 if the copier is out of
+        // paper, -3 if the copier is out of toner, -5 if an unknown error
+        // occurred.
         if (myToner.getAmount() > .05)
         {
             if (myPaper.getAmount() > 0)
@@ -59,8 +68,10 @@ public class CopyManager
         return RC;
     }
     
+    // This class returns the total number of copies made by this copier.
     public int getTotalCopiesMade()
     { 
+        // The current amount of copies made.
         return totalCount;
     }
 }

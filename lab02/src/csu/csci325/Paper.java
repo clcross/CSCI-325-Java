@@ -12,9 +12,11 @@ package csu.csci325;
  */
 public class Paper
 {
+    // setting variables
     final int MAX_PAPER = 3000;
     private int amount;
     
+    // Constructs a new Paper object with the specified amount of paper.
     public Paper(int amt)
     {
         if (amt > MAX_PAPER)
@@ -23,12 +25,19 @@ public class Paper
         }
         amount = amt;
     }
+    
+    // This class returns the amount of paper in the copier.
     public int getAmount()
     {
+        // amount - The current amount of paper in the copier.
         return amount;
     }
+    
+    // This class increments the amount of paper by the specified amount.
     public boolean incrementPaper(int amt)
     {
+        // true if amount was incremented successfully. Returns false if adding
+        // the amount specified would exceed MAX_PAPER.
         boolean success;
         if ((amount + amt) <= MAX_PAPER)
         {
@@ -42,8 +51,11 @@ public class Paper
         return success;
     }
 
+    // This class decrements the amount of paper by 1.
     public boolean decrementPaper()
     {
+        // true if the amount was decremented successfully. Returns false if the
+        // paper amount is 0 and could not be decremented
         boolean success;
         if ((amount - 1) >= 0)
         {
