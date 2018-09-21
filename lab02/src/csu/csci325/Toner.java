@@ -43,7 +43,7 @@ public class Toner
     {
         boolean success;
         
-        if ((amt - .05) >= 0)
+        if ((amt - .05) >= .05)
         {
             amt -= .05;
             
