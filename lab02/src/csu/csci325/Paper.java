@@ -13,7 +13,7 @@ package csu.csci325;
 public class Paper
 {
     final int MAX_PAPER = 3000;
-    public int amount;
+    private int amount;
     
     public Paper(int amt)
     {
@@ -29,32 +29,32 @@ public class Paper
     }
     public boolean incrementPaper(int amt)
     {
-        boolean tOrF;
+        boolean success;
         if ((amount + amt) <= MAX_PAPER)
         {
             amount += amt;
-            tOrF = true;
+            success = true;
         }
         else
         {
-            tOrF = false;
+            success = false;
         }
-        return tOrF;
+        return success;
     }
 
     public boolean decrementPaper()
     {
-        boolean tOrF;
+        boolean success;
         if ((amount - 1) >= 0)
         {
             amount -= 1;
-            tOrF = true;
+            success = true;
         }
         else
         {
-            tOrF = false;
+            success = false;
         }
-        return tOrF;
+        return success;
     }
 }
 

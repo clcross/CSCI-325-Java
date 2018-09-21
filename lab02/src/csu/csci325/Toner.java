@@ -13,7 +13,7 @@ package csu.csci325;
 public class Toner
 {
     final double MAX_AMOUNT = 18.0;
-    public double amt;
+    private double amt;
     
     
     public Toner()
@@ -26,32 +26,35 @@ public class Toner
     }
     public boolean incrementByOne()
     {
-        boolean tOrF;
+        boolean success;
         
-        if ((amt++) < MAX_AMOUNT)
+        if ((amt) < MAX_AMOUNT)
         {
             amt++;
-            tOrF = true;
+            success = true;
         }
         else
         {
-            tOrF = false;
+            success = false;
         }
-        return tOrF;
+        return success;
     }
     public boolean decrementAmt()
     {
-        boolean tOrF;
+        boolean success;
         
-        if ((amt - .05) >= 0)
+        if (amt > 0)
         {
             amt -= .05;
-            tOrF = true;
+            if (amt < 0)
+                amt = 0;
+            
+            success = true;
         }
         else
         {
-            tOrF = false;
+            success = false;
         }
-        return tOrF;
+        return success;
     }
 }
