@@ -39,4 +39,5 @@ public class TugBoat extends Boat
     {
         return ("TugBoat Name: " + mName + "\nCargo capacity: " + maxTons);
     }
+    
 }
