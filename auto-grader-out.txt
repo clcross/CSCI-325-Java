@@ -1,2 +1,10 @@
 I am run number 000563.
 Pulling source code...
+------------------------------------------------
+Changes found in create
+Changes found in lab03
+------------------------------------------------
+*****************Examining create****************
+Auto-grader grade: *****************Finished create****************
+*****************Examining lab03****************
+Auto-grader grade: *****************Finished lab03****************
