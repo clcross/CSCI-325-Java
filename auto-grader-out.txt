@@ -1,7 +1,2 @@
-I am run number 000565.
+I am run number 000566.
 Pulling source code...
-------------------------------------------------
-Changes found in lab03
-------------------------------------------------
-*****************Examining lab03****************
-Auto-grader grade: *****************Finished lab03****************
