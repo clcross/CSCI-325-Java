@@ -1,9 +1,3 @@
-I am run number 000575.
-Pulling source code...
-------------------------------------------------
-Changes found in lab03
-------------------------------------------------
-*****************Examining lab03****************
 ******************* PART 1 BoatTest *********************
 *************COMPILATION ERROR*******************
 src/csu/csci325/Fleet.java:35: error: '.class' expected
@@ -32,4 +26,3 @@ src/csu/csci325/Fleet.java:35: error: '.class' expected
                       ^
 1 error
 Compilation errors, please fix...
-Auto-grader grade: *****************Finished lab03****************
