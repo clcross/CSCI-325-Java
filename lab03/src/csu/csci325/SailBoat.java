@@ -40,6 +40,5 @@ public class SailBoat extends Boat
     {
         return ("SailBoat Name: " + mName + "\nMaximum passengers: " +
                 maxPassengers);
-    }
-    
+    } 
 }
