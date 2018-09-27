@@ -26,3 +26,4 @@ src/csu/csci325/Fleet.java:35: error: '.class' expected
                       ^
 1 error
 Compilation errors, please fix...
+Auto-grader grade: *****************Finished lab03****************
