@@ -85,3 +85,5 @@ tests/csu/csci325/FleetTest.java:80: error: cannot find symbol
   location: variable instance of type Fleet
 1 error
 Compilation errors, please fix...
+Auto-grader grade: 68.750
+*****************Finished lab03****************
