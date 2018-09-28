@@ -42,5 +42,6 @@ public class Boat
     public String toString()
     {
         return ("Boat Name: " + mName + "\nYear built: " + mYear);
-    } 
+    }
+    
 }
