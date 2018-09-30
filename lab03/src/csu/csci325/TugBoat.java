@@ -37,6 +37,7 @@ public class TugBoat extends Boat
     @Override
     public String toString()
     {
-        return ("TugBoat Name: " + mName + "\nCargo capacity: " + maxTons);
+        return ("TugBoat Name: " + mName + "\nCargo capacity: " + maxTons +
+                " tons");
     }
 }
