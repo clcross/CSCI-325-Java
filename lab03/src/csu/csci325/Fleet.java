@@ -41,6 +41,7 @@ public class Fleet
             Boat boat = myFleet.get(i);
             if (boat.getYearBuilt() == year && boat.getName().equals(name))
             {
+                retVal = boat;
                 notFound = false;
             }
             i++;
