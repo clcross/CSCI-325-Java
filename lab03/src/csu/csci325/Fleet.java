@@ -49,7 +49,7 @@ public class Fleet
         return retVal;
     }
     
-    public void reoveBoat(String name, int year)
+    public void removeBoat(String name, int year)
     {
         boolean notFound = true;
         int i = 0;
