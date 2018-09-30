@@ -6,7 +6,7 @@ JUnit version 4.12
 .setName - instantiate with Lolipop,set to Little Minnow
 .setYearBuilt - instantiate with 1960, set to 1965.
 
-Time: 0.008
+Time: 0.009
 
 OK (5 tests)
 
@@ -32,20 +32,22 @@ JUnit version 4.12
 .getCapacity - Theodore, 1989, 58
 .TugBoat constructor - instantiate with (Santa Maria, 1460, 41)
 
-Time: 0.008
+Time: 0.01
 
 OK (4 tests)
 
 + 25.000 pts of 25.000
 Total grade so far: 75.000
 ******************* PART 4 FleetTest *********************
-*************COMPILATION ERROR*******************
-tests/csu/csci325/FleetTest.java:80: error: cannot find symbol
-        instance.removeBoat(name, year);
-                ^
-  symbol:   method removeBoat(String,int)
-  location: variable instance of type Fleet
-1 error
-Compilation errors, please fix...
-Auto-grader grade: 75.000
-*****************Finished lab03****************
+JUnit version 4.12
+.getFleet
+.addBoat
+.getBoat
+.removeBoat
+
+Time: 0.008
+
+OK (4 tests)
+
++ 25.000 pts of 25.000
+Total grade so far: 100.000
