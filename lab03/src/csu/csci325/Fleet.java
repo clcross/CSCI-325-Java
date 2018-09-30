@@ -13,25 +13,40 @@ import java.util.ArrayList;
  */
 public class Fleet
 {
-    ArrayList<Boat> Fleet;
+    private ArrayList<Boat> myFleet;
     
     public Fleet()
     {
-        Fleet = new ArrayList<>();
+        myFleet = new ArrayList<>();
     }
     
     public ArrayList<Boat> getFleet()
     {
-        return Fleet;
+        return myFleet;
     }
     
     public void addBoat(Boat b)
     {
-        Fleet.add(b);
+        myFleet.add(b);
     }
     
     public Boat getBoat(String name, int year)
     {
-        return null;
+        Boat retVal = null;
+        boolean notFound = true;
+        int i = 0;
+        
+        while ((notFound) && i < myFleet.size())
+        {
+            Boat boat = myFleet.get(i);
+            if (boat.getYearBuilt() == year && boat.getName().equals(name))
+            {
+                notFound = false;
+            }
+            i++;
+        }
+        return retVal;
     }
+    
+    
 }
