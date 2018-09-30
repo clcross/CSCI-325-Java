@@ -48,5 +48,20 @@ public class Fleet
         return retVal;
     }
     
-    
+    public void reoveBoat(String name, int year)
+    {
+        boolean notFound = true;
+        int i = 0;
+        
+        while ((notFound) && i < myFleet.size())
+        {
+            Boat boat = myFleet.get(i);
+            if (boat.getYearBuilt() == year && boat.getName().equals(name))
+            {
+                myFleet.remove(i);
+                notFound = false;
+            }
+            i++;
+        }
+    }
 }
