@@ -10,26 +10,32 @@ import java.util.ArrayList;
 /**
  *
  * @author ccross190196
+ * The Fleet class stores information about a fleet of boats.
  */
 public class Fleet
 {
     private ArrayList<Boat> myFleet;
     
+    // The constructor initializes the Fleet's ArrayList of Boats.
     public Fleet()
     {
         myFleet = new ArrayList<>();
     }
     
+    // The getFleet method returns the Fleet of Boats.
     public ArrayList<Boat> getFleet()
     {
         return myFleet;
     }
     
+    // The addBoat method adds a Boat object to the fleet ArrayList
     public void addBoat(Boat b)
     {
         myFleet.add(b);
     }
     
+    // The getBoat method returns the first Boat object with the given name 
+    // and year.
     public Boat getBoat(String name, int year)
     {
         Boat retVal = null;
@@ -49,6 +55,8 @@ public class Fleet
         return retVal;
     }
     
+    // The removeBoat method removes the first Boat object with the given name 
+    // and year.
     public void removeBoat(String name, int year)
     {
         boolean notFound = true;
