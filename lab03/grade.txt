@@ -51,3 +51,5 @@ OK (4 tests)
 
 + 25.000 pts of 25.000
 Total grade so far: 100.000
+Auto-grader grade: 100.000
+*****************Finished lab03****************
