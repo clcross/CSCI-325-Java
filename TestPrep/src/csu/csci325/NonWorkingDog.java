@@ -20,8 +20,6 @@ public class NonWorkingDog extends DogBreed
         super(h, t);
         
         mSize = s;
-        mHairColor = h;
-        mTailStyle = t;
     }
     
     public void setSize(int s)

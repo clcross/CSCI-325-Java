@@ -12,15 +12,11 @@ package csu.csci325;
  */
 public class WorkingDog extends DogBreed
 {
-    private String mHairColor;
-    private String mTailStyle;
     private String mJob;
     public WorkingDog(String h, String t, String j)
     {
         super(h, t);
         
-        mHairColor = h;
-        mTailStyle = t;
         mJob = j;
     }
     
@@ -38,6 +34,6 @@ public class WorkingDog extends DogBreed
     @Override
     public String getHairColor()
     {
-        return mTailStyle;
+        return this.getTailStyle();
     }
 }

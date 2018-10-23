@@ -48,6 +48,5 @@ public class DogDriver
         // test case f-h
         myNonWorkingDog.setSize(0);
         System.out.println(myNonWorkingDog.getSize());
-        
     }
 }
