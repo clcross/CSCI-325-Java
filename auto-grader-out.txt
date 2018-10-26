@@ -1,10 +1,2 @@
-I am run number 000963.
+I am run number 000964.
 Pulling source code...
-------------------------------------------------
-Changes found in create
-Changes found in lab04.1
-------------------------------------------------
-*****************Examining create****************
-Auto-grader grade: *****************Finished create****************
-*****************Examining lab04.1****************
-Auto-grader grade: *****************Finished lab04.1****************
