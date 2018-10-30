@@ -1,2 +1,10 @@
 I am run number 001000.
 Pulling source code...
+------------------------------------------------
+Changes found in lab04.1
+Changes found in lab04.2
+------------------------------------------------
+*****************Examining lab04.1****************
+Auto-grader grade: *****************Finished lab04.1****************
+*****************Examining lab04.2****************
+Auto-grader grade: *****************Finished lab04.2****************
