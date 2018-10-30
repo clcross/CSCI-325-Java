@@ -129,7 +129,6 @@ public class Part1 extends Application
             resultImage = new ImageView("file:America.png");
         }
     }
-
     /**
      * @param args the command line arguments
      */

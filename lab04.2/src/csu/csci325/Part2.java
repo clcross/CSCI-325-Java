@@ -6,6 +6,7 @@
 package csu.csci325;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -30,7 +31,9 @@ public class Part2 extends Application
     private Label resultMean;
     private Label resultMedian;
     private Label resultMode;
-    private ArrayList<Double> numsArray;
+    private ArrayList<Double> meanArray;
+    private ArrayList<Double> medArray;
+    private ArrayList<Double> modeArray;
     private CalcMeanBtnHandler meanHandler;
     private CalcMedBtnHandler medHandler;
     private CalcModeBtnHandler modeHandler;
@@ -43,7 +46,9 @@ public class Part2 extends Application
         Button calcModeBtn = new Button("Calculate Mode");
         Button calcAllBtn = new Button("Calculate Mean, Median, and, Mode");
         Button closeBtn = new Button("Close");
-        numsArray = new ArrayList<>();
+        meanArray = new ArrayList<>();
+        medArray = new ArrayList<>();
+        modeArray = new ArrayList<>();
         
         resultMean = new Label();
         resultMedian = new Label();
@@ -102,10 +107,10 @@ public class Part2 extends Application
             for (int i = 0; i < string.length; i++)
             {
                 string[i] = string[i].trim();
-                numsArray.add(i, Double.parseDouble(string[i]));
-                sum += numsArray.get(i);
+                meanArray.add(i, Double.parseDouble(string[i]));
+                sum += meanArray.get(i);
             }
-            mean = sum / numsArray.size();
+            mean = sum / meanArray.size();
             resultMean.setText(String.format("Mean: %,.1f", mean));
         }
     }
@@ -116,14 +121,23 @@ public class Part2 extends Application
         @Override
         public void handle(ActionEvent event)
         {
-            if (numsArray.size() % 2 == 0)
+            String[] string = dataTextField.getText().split(",");
+            
+            for (int i = 0; i < string.length; i++)
             {
-                median = (((double)numsArray.get(numsArray.size()/2) + 
-                        (double)numsArray.get(numsArray.size()/2 - 1))/2);
+                string[i] = string[i].trim();
+                medArray.add(i, Double.parseDouble(string[i]));
+            }
+            Collections.sort(medArray);
+            
+            if (medArray.size() % 2 == 0)
+            {
+                median = (((double)medArray.get(medArray.size()/2) + 
+                        (double)medArray.get(medArray.size()/2 - 1))/2);
             }
             else
             {
-                median = ((double)numsArray.get(numsArray.size()/2));
+                median = ((double)medArray.get(medArray.size()/2));
             }
             resultMedian.setText(String.format("Median: %,.1f", median));
         }
@@ -134,15 +148,24 @@ public class Part2 extends Application
         @Override
         public void handle(ActionEvent event)
         {
-            double mode = numsArray.get(0);
-            int maxCount = 0;
-            for (int i = 0; i < numsArray.size(); i++)
+            String[] string = dataTextField.getText().split(",");
+            
+            for (int i = 0; i < string.length; i++)
             {
-                double value = numsArray.get(i);
+                string[i] = string[i].trim();
+                modeArray.add(i, Double.parseDouble(string[i]));
+            }
+            Collections.sort(modeArray);
+            
+            double mode = modeArray.get(0);
+            int maxCount = 0;
+            for (int i = 0; i < modeArray.size(); i++)
+            {
+                double value = modeArray.get(i);
                 int count = 1;
-                for (int j = 0; j < numsArray.size(); j++)
+                for (int j = 0; j < modeArray.size(); j++)
                 {
-                    if (numsArray.get(j) == value) count++;
+                    if (modeArray.get(j) == value) count++;
                     if (count > maxCount)
                     {
                         mode = value;
