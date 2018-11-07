@@ -28,8 +28,7 @@ public class AddressVerification
         }
         try
         {
-            isValid = addressArray[0].matches("\\d{1,5}\\s\\w{2,20}"
-                    + "\\s\\w{2,20}");
+            isValid = addressArray[0].matches("\\d{1,5}\\s\\w{2,20}\\s\\w{2,20}");
             if (isValid == false)
             {
                 throw new InvalidAddressException();
@@ -63,8 +62,7 @@ public class AddressVerification
         }
         catch (InvalidAddressException e)
         {
-            System.out.println("The state and zip portion is not in the correct"
-                    + " form.");
+            System.out.println("The state and zip portion is not in the correct form.");
         }
         return isValid;
     }
@@ -75,19 +73,12 @@ public class AddressVerification
         
         addressArray = sAddress.split(",");
         
-        try
+        if (addressArray.length < 1 && addressArray.length > 3)
         {
-          if (addressArray.length < 1 && addressArray.length > 3)
-            {
-                isValid = false;
-                throw new InvalidAddressException();
-            }  
+            isValid = false;
+            throw new InvalidAddressException("You have entered an invalid "
+                    + "address, goodbye.");
         }
-        catch (InvalidAddressException e)
-        {
-            System.out.println("You have entered an invalid address, goodbye.");
-        }
-        
         
         return isValid;
     }
@@ -99,53 +90,29 @@ public class AddressVerification
         streetAdd = streetAdd.trim();
         String[] string = streetAdd.split(" ");
         
-        try
+        if (string.length < 2)
         {
-           if (string.length < 2)
+            isValid = false;
+            throw new InvalidAddressException("You have entered an invalid "
+                    + "street address, goodbye.");
+        }
+        
+        if (string[0].matches("\\d{1,5}") == false)
+        {
+            isValid = false;
+            throw new InvalidAddressException("You have entered an invalid "
+                    + "street number, goodbye.");
+        }
+        
+        if (string.length < 3)
+        {
+            if (string[1].matches("\\w{2,20}") == false)
             {
                 isValid = false;
-                throw new InvalidAddressException();
-            } 
-        }
-        catch (InvalidAddressException e)
-        {
-            System.out.println("You have entered an invalid street address, "
-                    + "goodbye.");
-        }
-        
-        
-        try
-        {
-            if (string[0].matches("\\d{1,5}") == false)
-            {
-                isValid = false;
-                throw new InvalidAddressException();
+                throw new InvalidAddressException("You have entered an invalid"
+                        + " street name, goodbye");
             }
         }
-        catch (InvalidAddressException e)
-        {
-            System.out.println("You have entered an invalid street number, "
-                    + "goodbye.");
-        }
-        
-        
-        try
-        {
-            if (string.length < 3)
-            {
-                if (string[1].matches("\\w{2,20}") == false)
-                {
-                    isValid = false;
-                    throw new InvalidAddressException();
-                }
-            }
-        }
-        catch (InvalidAddressException e)
-        {
-            System.out.println("You have entered an invalid street name, "
-                    + "goodbye");
-        }
-        
         
         return isValid;
     }
@@ -154,17 +121,11 @@ public class AddressVerification
     {
         boolean isValid = true;
         
-        try
+        if (city.length() != 2)
         {
-            if (city.length() != 2)
-            {
-                isValid = false;
-                throw new InvalidAddressException();
-            } 
-        }
-        catch (InvalidAddressException e)
-        {
-            System.out.println("You have entered an invalid city, goodbye.");
+            isValid = false;
+            throw new InvalidAddressException("You have entered an invalid city"
+                    + ", goodbye.");
         }
         
         
@@ -178,31 +139,19 @@ public class AddressVerification
         stateZip = stateZip.trim();
         String[] string = stateZip.split(" ");
        
-        try
+        if (string[1].length() != 2)
         {
-            if (string[1].length() != 2)
-            {
-                isValid = false;
-                throw new InvalidAddressException();
-            }
-        }
-        catch (InvalidAddressException e)
-        {
-            System.out.println("You have entered an invalid state, goodbye.");
-        }
+            isValid = false;
+            throw new InvalidAddressException("You have entered an invalid "
+                    + "state, goodbye.");
+        }  
         
-        try
+        if (string[0].length() != 5)
         {
-            if (string[0].length() != 5)
-            {
-                isValid = false;
-                throw new InvalidAddressException();
-            }
-        }
-        catch (InvalidAddressException e)
-        {
-            System.out.println("You have entered an invalid zip code, goodbye.");
-        }
+            isValid = false;
+            throw new InvalidAddressException("You have entered an invalid "
+                    + "zip code, goodbye.");
+        } 
           
         return isValid; 
     }
