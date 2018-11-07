@@ -113,7 +113,7 @@ public class CardValidator
         return numAttempts;
     }
     
-    public boolean cheackNum(String sCardNum, String sCardType, 
+    public static boolean cheackNum(String sCardNum, String sCardType, 
             int iCardType)
     {
         boolean isValid = true;
