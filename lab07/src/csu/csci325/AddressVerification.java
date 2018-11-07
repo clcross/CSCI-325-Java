@@ -26,6 +26,21 @@ public class AddressVerification
         {
             addressArray[i] = addressArray[i].trim();
         }
+        
+        try
+        {
+            if (addressArray.length != 3)
+            {
+                isValid = false;
+                throw new InvalidAddressException();
+            }
+        }
+        catch (InvalidAddressException e)
+        {
+            System.out.println("You have entered an invalid "
+                    + "address, goodbye.");
+        }
+        
         try
         {
             isValid = addressArray[0].matches("\\d{1,5}\\s\\w{2,20}\\s\\w{2,20}");
@@ -73,7 +88,7 @@ public class AddressVerification
         
         addressArray = sAddress.split(",");
         
-        if (addressArray.length < 1 && addressArray.length > 3)
+        if (addressArray.length != 3)
         {
             isValid = false;
             throw new InvalidAddressException("You have entered an invalid "
