@@ -1,9 +1,3 @@
-I am run number 001108.
-Pulling source code...
-------------------------------------------------
-Changes found in lab07
-------------------------------------------------
-*****************Examining lab07****************
 ******************* PART 1 CardValidatorTest 34 testcases *********************
 *************COMPILATION ERROR*******************
 tests/csu/csci325/CardValidatorTest.java:295: error: cannot find symbol
@@ -435,5 +429,3 @@ Tests run: 18,  Failures: 8
 
 + 19.425 pts of 35.000
 Total grade so far: 19.425
-Auto-grader grade: 19.425
-*****************Finished lab07****************
