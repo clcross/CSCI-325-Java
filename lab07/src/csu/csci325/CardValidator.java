@@ -6,8 +6,6 @@
 package csu.csci325;
 
 import java.util.Scanner;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
@@ -115,65 +113,60 @@ public class CardValidator
         return numAttempts;
     }
     
-    public static boolean cheackNum(String sCardNum, String sCardType, 
+    public static boolean checkNum(String sCardNum, String sCardType, 
             int iCardType)
     {
-        boolean isValid = true;
+        boolean isValid = false;
         sCardType = sCardType.toLowerCase();
         sCardType = sCardType.trim();
-        CardValidator card = new CardValidator();
         
-        try {
-            if (card.checkType(iCardType) == false)
+        if (iCardType < 1 || iCardType > 4)
+        {
+           switch (sCardType)
             {
-                switch (sCardType)
-                {
-                    case "american express":
-                        isValid = sCardNum.startsWith("3") &&
-                                sCardNum.length() == 15;
-                        break;
-                    case "visa":
-                        isValid = sCardNum.startsWith("4") &&
-                                sCardNum.length() == 16;
-                        break;
-                    case "mastercard":
-                        isValid = sCardNum.startsWith("5") &&
-                                sCardNum.length() == 16;
-                        break;
-                    case "discover":
-                        isValid = sCardNum.startsWith("6") &&
-                                sCardNum.length() == 16;
-                        break;
-                    default:
-                        break;
-                }
-            }
-            else if (card.checkType(sCardType) == false)
+                case "american express":
+                    isValid = sCardNum.startsWith("3") && 
+                            sCardNum.length() == 15;
+                    break;
+                case "visa":
+                    isValid = sCardNum.startsWith("4") && 
+                            sCardNum.length() == 16;
+                    break;
+                case "mastercard":
+                    isValid = sCardNum.startsWith("5") && 
+                            sCardNum.length() == 16;
+                    break;
+                case "discover":
+                    isValid = sCardNum.startsWith("6") && 
+                            sCardNum.length() == 16;
+                    break;
+                default:
+                    break;
+            } 
+        }
+        else if (sCardType.isEmpty())
+        {
+            switch (iCardType)
             {
-                switch (iCardType)
-                {
-                    case 1:
-                        isValid = sCardNum.startsWith("3") &&
-                                sCardNum.length() == 15;
-                        break;
-                    case 2:
-                        isValid = sCardNum.startsWith("4") &&
-                                sCardNum.length() == 16;
-                        break;
-                    case 3:
-                        isValid = sCardNum.startsWith("5") &&
-                                sCardNum.length() == 16;
-                        break;
-                    case 4:
-                        isValid = sCardNum.startsWith("6") &&
-                                sCardNum.length() == 16;
-                        break;
-                    default:
-                        break;
-                }
+                case 1:
+                    isValid = sCardNum.startsWith("3") && 
+                            sCardNum.length() == 15;
+                    break;
+                case 2:
+                    isValid = sCardNum.startsWith("4") && 
+                            sCardNum.length() == 16;
+                    break;
+                case 3:
+                    isValid = sCardNum.startsWith("5") && 
+                            sCardNum.length() == 16;
+                    break;
+                case 4:
+                    isValid = sCardNum.startsWith("6") && 
+                            sCardNum.length() == 16;
+                    break;
+                default:
+                    break;
             }
-        } catch (MaxAttemptsExceededException ex) {
-            Logger.getLogger(CardValidator.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         return isValid;
