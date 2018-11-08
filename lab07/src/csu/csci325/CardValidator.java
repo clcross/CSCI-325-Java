@@ -119,6 +119,20 @@ public class CardValidator
         boolean isValid = false;
         sCardType = sCardType.toLowerCase();
         sCardType = sCardType.trim();
+        CardValidator card = new CardValidator();
+        
+        try
+        {
+            if (card.getAttempts() > 2)
+            {
+                throw new MaxAttemptsExceededException();
+            }
+        }
+        catch (MaxAttemptsExceededException e)
+        {
+            System.out.println(e);
+        }
+        
         
         if (iCardType < 1 || iCardType > 4)
         {
