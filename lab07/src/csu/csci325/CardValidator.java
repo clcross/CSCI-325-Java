@@ -17,6 +17,7 @@ public class CardValidator
     private String stringType;
     private int numAttempts;
     CardValidator card1;
+    static CardValidator card = new CardValidator();
     public CardValidator()
     {
         card1 = new CardValidator();
@@ -118,7 +119,7 @@ public class CardValidator
         boolean isValid = false;
         sCardType = sCardType.toLowerCase();
         sCardType = sCardType.trim();
-        CardValidator card = new CardValidator();
+        
         
         try
         {
