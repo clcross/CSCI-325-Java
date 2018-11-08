@@ -16,8 +16,10 @@ public class CardValidator
     private int numType;
     private String stringType;
     private int numAttempts;
+    CardValidator card1;
     public CardValidator()
     {
+        card1 = new CardValidator();
         numType = 0;
         stringType = "";
         numAttempts = 0;
@@ -43,9 +45,7 @@ public class CardValidator
     {
         boolean match = true;
         
-        numAttempts++;
-        
-        if (numAttempts > 2)
+        if (card1.getAttempts() > 2)
         {
             throw new MaxAttemptsExceededException();
         }
@@ -79,9 +79,7 @@ public class CardValidator
         sType = sType.toLowerCase();
         sType = sType.trim();
         
-        numAttempts++;
-        
-        if (numAttempts > 2)
+        if (card1.getAttempts() > 2)
         {
             throw new MaxAttemptsExceededException();
         }
