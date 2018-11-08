@@ -166,14 +166,14 @@ public class AddressVerification
                     + "state, goodbye.");
         }
         
-        if (string[1].length() != 2)
+        if (string[0].length() != 2)
         {
             isValid = false;
             throw new InvalidAddressException("You have entered an invalid "
                     + "state, goodbye.");
         }  
         
-        if (string[0].length() != 5)
+        if (string[1].length() != 5)
         {
             isValid = false;
             throw new InvalidAddressException("You have entered an invalid "
