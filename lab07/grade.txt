@@ -1,125 +1,77 @@
 ******************* PART 1 CardValidatorTest 34 testcases *********************
 *************COMPILATION ERROR*******************
-tests/csu/csci325/CardValidatorTest.java:295: error: cannot find symbol
-            result = instance.checkNum(sCardNum, sCardType, iCardType);
-                             ^
-  symbol:   method checkNum(String,String,int)
-  location: variable instance of type CardValidator
-tests/csu/csci325/CardValidatorTest.java:316: error: cannot find symbol
-            result = instance.checkNum(sCardNum, sCardType, iCardType);
-                             ^
-  symbol:   method checkNum(String,String,int)
-  location: variable instance of type CardValidator
-tests/csu/csci325/CardValidatorTest.java:336: error: cannot find symbol
-            result = instance.checkNum(sCardNum, sCardType, iCardType);
-                             ^
-  symbol:   method checkNum(String,String,int)
-  location: variable instance of type CardValidator
-tests/csu/csci325/CardValidatorTest.java:356: error: cannot find symbol
-            result = instance.checkNum(sCardNum, sCardType, iCardType);
-                             ^
-  symbol:   method checkNum(String,String,int)
-  location: variable instance of type CardValidator
-tests/csu/csci325/CardValidatorTest.java:376: error: cannot find symbol
-            result = instance.checkNum(sCardNum, sCardType, iCardType);
-                             ^
-  symbol:   method checkNum(String,String,int)
-  location: variable instance of type CardValidator
-tests/csu/csci325/CardValidatorTest.java:396: error: cannot find symbol
-            result = instance.checkNum(sCardNum, sCardType, iCardType);
-                             ^
-  symbol:   method checkNum(String,String,int)
-  location: variable instance of type CardValidator
-tests/csu/csci325/CardValidatorTest.java:416: error: cannot find symbol
-            result = instance.checkNum(sCardNum, sCardType, iCardType);
-                             ^
-  symbol:   method checkNum(String,String,int)
-  location: variable instance of type CardValidator
-tests/csu/csci325/CardValidatorTest.java:438: error: cannot find symbol
-            result = instance.checkNum(sCardNum, sCardType, iCardType);
-                             ^
-  symbol:   method checkNum(String,String,int)
-  location: variable instance of type CardValidator
-tests/csu/csci325/CardValidatorTest.java:444: error: cannot find symbol
-            result = instance.checkNum(sCardNum, sCardType, iCardType);
-                             ^
-  symbol:   method checkNum(String,String,int)
-  location: variable instance of type CardValidator
-tests/csu/csci325/CardValidatorTest.java:450: error: cannot find symbol
-            result = instance.checkNum(sCardNum, sCardType, iCardType);
-                             ^
-  symbol:   method checkNum(String,String,int)
-  location: variable instance of type CardValidator
-tests/csu/csci325/CardValidatorTest.java:476: error: cannot find symbol
-            result = instance.checkNum(sCardNum, sCardType, iCardType);
-                             ^
-  symbol:   method checkNum(String,String,int)
-  location: variable instance of type CardValidator
-tests/csu/csci325/CardValidatorTest.java:497: error: cannot find symbol
-            result = instance.checkNum(sCardNum, sCardType, iCardType);
-                             ^
-  symbol:   method checkNum(String,String,int)
-  location: variable instance of type CardValidator
-tests/csu/csci325/CardValidatorTest.java:517: error: cannot find symbol
-            result = instance.checkNum(sCardNum, sCardType, iCardType);
-                             ^
-  symbol:   method checkNum(String,String,int)
-  location: variable instance of type CardValidator
-tests/csu/csci325/CardValidatorTest.java:537: error: cannot find symbol
-            result = instance.checkNum(sCardNum, sCardType, iCardType);
-                             ^
-  symbol:   method checkNum(String,String,int)
-  location: variable instance of type CardValidator
-tests/csu/csci325/CardValidatorTest.java:557: error: cannot find symbol
-            result = instance.checkNum(sCardNum, sCardType, iCardType);
-                             ^
-  symbol:   method checkNum(String,String,int)
-  location: variable instance of type CardValidator
-tests/csu/csci325/CardValidatorTest.java:577: error: cannot find symbol
-            result = instance.checkNum(sCardNum, sCardType, iCardType);
-                             ^
-  symbol:   method checkNum(String,String,int)
-  location: variable instance of type CardValidator
-tests/csu/csci325/CardValidatorTest.java:597: error: cannot find symbol
-            result = instance.checkNum(sCardNum, sCardType, iCardType);
-                             ^
-  symbol:   method checkNum(String,String,int)
-  location: variable instance of type CardValidator
-tests/csu/csci325/CardValidatorTest.java:617: error: cannot find symbol
-            result = instance.checkNum(sCardNum, sCardType, iCardType);
-                             ^
-  symbol:   method checkNum(String,String,int)
-  location: variable instance of type CardValidator
-tests/csu/csci325/CardValidatorTest.java:638: error: cannot find symbol
-            result = instance.checkNum(sCardNum, sCardType, iCardType);
-                             ^
-  symbol:   method checkNum(String,String,int)
-  location: variable instance of type CardValidator
-tests/csu/csci325/CardValidatorTest.java:658: error: cannot find symbol
-            result = instance.checkNum(sCardNum, sCardType, iCardType);
-                             ^
-  symbol:   method checkNum(String,String,int)
-  location: variable instance of type CardValidator
-tests/csu/csci325/CardValidatorTest.java:678: error: cannot find symbol
-            result = instance.checkNum(sCardNum, sCardType, iCardType);
-                             ^
-  symbol:   method checkNum(String,String,int)
-  location: variable instance of type CardValidator
-tests/csu/csci325/CardValidatorTest.java:698: error: cannot find symbol
-            result = instance.checkNum(sCardNum, sCardType, iCardType);
-                             ^
-  symbol:   method checkNum(String,String,int)
-  location: variable instance of type CardValidator
-tests/csu/csci325/CardValidatorTest.java:718: error: cannot find symbol
-            result = instance.checkNum(sCardNum, sCardType, iCardType);
-                             ^
-  symbol:   method checkNum(String,String,int)
-  location: variable instance of type CardValidator
-tests/csu/csci325/CardValidatorTest.java:738: error: cannot find symbol
-            result = instance.checkNum(sCardNum, sCardType, iCardType);
-                             ^
-  symbol:   method checkNum(String,String,int)
-  location: variable instance of type CardValidator
+tests/csu/csci325/CardValidatorTest.java:297: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:318: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:338: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:358: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:378: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:398: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:418: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:440: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:446: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:452: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:478: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:499: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:519: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:539: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:559: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:579: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:599: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:619: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:640: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:660: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:680: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:700: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:720: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:740: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
 24 errors
 Compilation errors, please fix...
 ******************* PART 2 AddressVerificationTest - 18 testcases *********************
@@ -301,5 +253,3 @@ Tests run: 18,  Failures: 4
 
 + 27.195 pts of 35.000
 Total grade so far: 27.195
-Auto-grader grade: 27.195
-*****************Finished lab07****************
