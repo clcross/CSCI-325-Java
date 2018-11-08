@@ -20,7 +20,7 @@ public class CardValidator
     static CardValidator card = new CardValidator();
     public CardValidator()
     {
-        card1 = new CardValidator();
+        //card1 = new CardValidator();
         numType = 0;
         stringType = "";
         numAttempts = 0;
