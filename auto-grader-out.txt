@@ -1,2 +1,124 @@
 I am run number 001177.
 Pulling source code...
+------------------------------------------------
+Changes found in lab07
+------------------------------------------------
+*****************Examining lab07****************
+******************* PART 1 CardValidatorTest 34 testcases *********************
+*************COMPILATION ERROR*******************
+tests/csu/csci325/CardValidatorTest.java:297: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:318: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:338: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:358: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:378: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:398: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:418: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:440: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:446: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:452: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:478: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:499: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:519: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:539: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:559: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:579: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:599: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:619: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:640: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:660: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:680: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:700: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:720: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+tests/csu/csci325/CardValidatorTest.java:740: error: exception MaxAttemptsExceededException is never thrown in body of corresponding try statement
+        catch (MaxAttemptsExceededException e) {
+        ^
+24 errors
+Compilation errors, please fix...
+******************* PART 2 AddressVerificationTest - 18 testcases *********************
+JUnit version 4.12
+.checkStateZip2 - (invalid) 30301
+InvalidAddressException thrown/caught appropriately.
+.checkStateZip3 - (invalid) GA
+InvalidAddressException thrown/caught appropriately.
+.checkStateZip4 - (invalid)Georgia 30301
+InvalidAddressException thrown/caught appropriately.
+.checkCity - (invalid) W
+InvalidAddressException thrown/caught appropriately.
+.validateAddress - (valid) 123 OldBirch Lane, Wren, SC 29673
+.checkFormat - (valid) 123 OldBirch, Wren, SC 29673
+.checkStreetAdd - (invalid) OldBirch
+InvalidAddressException thrown/caught appropriately.
+.checkStreetAdd - (invalid) Old Birch
+InvalidAddressException thrown/caught appropriately.
+.checkStreetAdd - (invalid) 123 B
+InvalidAddressException thrown/caught appropriately.
+.checkStreetAdd - (valid) 123 OldBirch
+.checkFormat - (invalid) 123 OldBirch, Wren
+InvalidAddressException thrown/caught appropriately.
+.checkFormat - (invalid) 123 OldBirch, Wren, SC, 29673
+InvalidAddressException thrown/caught appropriately.
+.validateAddress - (invalid) 123 OldBirch Lane, 29673
+You have entered an invalid address, goodbye.
+.validateAddress - (invalid) OldBirch, Wren, SC, 29673
+You have entered an invalid address, goodbye.
+.validateAddress - (invalid) 123 OldBirch, W, SC 29673
+The city name portion is not in the correct form.
+.validateAddress - (invalid) 123 OldBirch, Wren, 29673
+The state and zip portion is not in the correct form.
+.checkCity - (valid) Wren
+.checkStateZip - (valid) GA 30301
+
+Time: 0.016
+
+OK (18 tests)
+
++ 35.000 pts of 35.000
+Total grade so far: 35.000
+Auto-grader grade: 35.000
+*****************Finished lab07****************
