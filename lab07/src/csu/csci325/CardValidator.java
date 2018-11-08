@@ -110,6 +110,7 @@ public class CardValidator
     
     public int getAttempts()
     {
+        numAttempts++;
         return numAttempts;
     }
     
