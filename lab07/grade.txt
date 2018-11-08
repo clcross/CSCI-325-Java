@@ -110,7 +110,7 @@ The state and zip portion is not in the correct form.
 .checkCity - (valid) Wren
 E.checkStateZip - (valid) GA 30301
 E
-Time: 0.021
+Time: 0.022
 There were 4 failures:
 1) testValidateAddress2(csu.csci325.AddressVerificationTest)
 java.lang.ArrayIndexOutOfBoundsException: 2
@@ -253,5 +253,3 @@ Tests run: 18,  Failures: 4
 
 + 27.195 pts of 35.000
 Total grade so far: 27.195
-Auto-grader grade: 27.195
-*****************Finished lab07****************
