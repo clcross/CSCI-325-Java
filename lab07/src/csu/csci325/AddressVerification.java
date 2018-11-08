@@ -54,7 +54,7 @@ public class AddressVerification
                 throw new InvalidAddressException();
             }
         }
-        catch (InvalidAddressException e)
+        catch (InvalidAddressException ea)
         {
             System.out.println("The street address portion is not of the form: "
                     + "HouseNumber StreetName.");
@@ -67,7 +67,7 @@ public class AddressVerification
                 throw new InvalidAddressException();
             }
         }
-        catch (InvalidAddressException e)
+        catch (InvalidAddressException eb)
         {
             System.out.println("The city name portion is not in the "
                     + "correct form.");
@@ -80,7 +80,7 @@ public class AddressVerification
                 throw new InvalidAddressException();
             }
         }
-        catch (InvalidAddressException e)
+        catch (InvalidAddressException ec)
         {
             System.out.println("The state and zip portion is not in the correct form.");
         }
