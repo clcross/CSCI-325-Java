@@ -43,7 +43,12 @@ public class AddressVerification
         
         try
         {
-            isValid = addressArray[0].matches("\\d{1,5}\\s\\w{2,20}\\s\\w{2,20}");
+            //isValid = addressArray[0].matches("\\d{1,5}\\s\\w{2,20}\\s\\w{2,20}");
+            if (addressArray[0].matches("\\d{1,5}\\s\\w{2,20}\\s\\w{2,20}") || 
+                    addressArray[0].matches("\\d{1,5}\\s\\w{2,20}"))
+            {
+                isValid = true;
+            }
             if (isValid == false)
             {
                 throw new InvalidAddressException();
