@@ -48,6 +48,7 @@ public class AddressVerification
                 {
                     System.out.println("The street address portion is not of the form: "
                             + "HouseNumber StreetName.");
+                    return isValid;
                 }
                 try
                 {
@@ -61,6 +62,7 @@ public class AddressVerification
                 {
                     System.out.println("The city name portion is not in the "
                             + "correct form.");
+                    return isValid;
                 }
                 try
                 {
@@ -72,7 +74,9 @@ public class AddressVerification
                 }
                 catch (InvalidAddressException ec)
                 {
-                    System.out.println("The state and zip portion is not in the correct form.");
+                    System.out.println("The state and zip portion is not in the"
+                            + " correct form.");
+                    return isValid;
                 }
             }
             else
@@ -85,6 +89,7 @@ public class AddressVerification
         {
             System.out.println("You have entered an invalid "
                     + "address, goodbye.");
+            return isValid;
         }
         
         return isValid;
