@@ -144,7 +144,7 @@ public class AddressVerification
     {
         boolean isValid = true;
         
-        if (city.length() != 2)
+        if (city.length() < 2)
         {
             isValid = false;
             throw new InvalidAddressException("You have entered an invalid city"
