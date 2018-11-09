@@ -78,19 +78,10 @@ public class CardValidator
         
         numAttempts++;
         
-        //sType = sType.toLowerCase();
-        //sType = sType.trim();
-        
         if (numAttempts > 2)
         {
             throw new MaxAttemptsExceededException();
         }
-        
-//        if (!sType.contains("american express") || !sType.contains("visa") || 
-//                !sType.contains("mastercard") || !sType.contains("discover"))
-//        {
-//            match = false;
-//        }
         
         switch (sType.toLowerCase().trim())
         {
@@ -121,17 +112,30 @@ public class CardValidator
     public static boolean checkNum(String sCardNum, String sCardType, 
             int iCardType)
     {
-        boolean isValid = false;
-        sCardType = sCardType.toLowerCase();
-        sCardType = sCardType.trim();
+        boolean isValid = true;
         
         if (iCardType < 1 || iCardType > 4)
         {
-           switch (sCardType)
+           switch (sCardType.toLowerCase().trim())
             {
                 case "american express":
-                    isValid = sCardNum.startsWith("3") && 
-                            sCardNum.length() == 15;
+                    //isValid = sCardNum.startsWith("3") && 
+                            //sCardNum.length() == 15;
+                    if (sCardNum.startsWith("3"))
+                    {
+                        if (sCardNum.length() == 15)
+                        {
+                            
+                        }
+                        else
+                        {
+                            isValid = false;
+                        }
+                    }
+                    else
+                    {
+                        isValid = false;
+                    }
                     break;
                 case "visa":
                     isValid = sCardNum.startsWith("4") && 
@@ -146,10 +150,12 @@ public class CardValidator
                             sCardNum.length() == 16;
                     break;
                 default:
+                    isValid = false;
                     break;
             } 
         }
-        else if (sCardType.isEmpty())
+        
+        if (sCardType.isEmpty())
         {
             switch (iCardType)
             {
@@ -170,8 +176,13 @@ public class CardValidator
                             sCardNum.length() == 16;
                     break;
                 default:
+                    isValid = false;
                     break;
             }
+        }
+        else
+        {
+            isValid = false;
         }
         
         return isValid;
