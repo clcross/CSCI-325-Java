@@ -69,7 +69,7 @@ public class CardValidator
                 match = false;
                 break;
         }
-        
+        numAttempts = 0;
         return match;
     }
     
@@ -105,7 +105,7 @@ public class CardValidator
                 match = false;
                 break;
         }
-        
+        numAttempts = 0;
         return match;       
     }
     
