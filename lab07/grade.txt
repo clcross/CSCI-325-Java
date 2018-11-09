@@ -907,11 +907,9 @@ The state and zip portion is not in the correct form.
 .checkCity - (valid) Wren
 .checkStateZip - (valid) GA 30301
 
-Time: 0.015
+Time: 0.016
 
 OK (18 tests)
 
 + 35.000 pts of 35.000
 Total grade so far: 52.680
-Auto-grader grade: 52.680
-*****************Finished lab07****************
