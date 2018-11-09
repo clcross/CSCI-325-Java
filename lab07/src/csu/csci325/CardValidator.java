@@ -114,9 +114,11 @@ public class CardValidator
     {
         boolean isValid = true;
         
+        sCardType = sCardType.toLowerCase().trim();
+        
         if (iCardType < 1 || iCardType > 4)
         {
-           switch (sCardType.toLowerCase().trim())
+           switch (sCardType)
             {
                 case "american express":
                     //isValid = sCardNum.startsWith("3") && 
@@ -155,7 +157,9 @@ public class CardValidator
             } 
         }
         
-        if (sCardType.isEmpty())
+        if (!sCardType.equals("american express") || !sCardType.equals("visa") 
+                || !sCardType.equals("mastercard") || 
+                !sCardType.equals("discover"))
         {
             switch (iCardType)
             {
