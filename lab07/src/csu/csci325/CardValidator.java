@@ -173,7 +173,6 @@ public class CardValidator
         {
             isValid = false;
         }
-        
         return isValid;
     }
 }
