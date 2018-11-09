@@ -46,7 +46,7 @@ public class CardValidator
         
         numAttempts++;
         
-        if (card1.getAttempts() > 2)
+        if (numAttempts > 2)
         {
             throw new MaxAttemptsExceededException();
         }
@@ -78,38 +78,38 @@ public class CardValidator
         
         numAttempts++;
         
-        sType = sType.toLowerCase();
-        sType = sType.trim();
+        //sType = sType.toLowerCase();
+        //sType = sType.trim();
         
-        if (card1.getAttempts() > 2)
+        if (numAttempts > 2)
         {
             throw new MaxAttemptsExceededException();
         }
         
-        if (!sType.contains("american express") || !sType.contains("visa") || 
-                !sType.contains("mastercard") || !sType.contains("discover"))
-        {
-            match = false;
-        }
-        
-//        switch (sType)
+//        if (!sType.contains("american express") || !sType.contains("visa") || 
+//                !sType.contains("mastercard") || !sType.contains("discover"))
 //        {
-//            case "american express":
-//                stringType = "American Express";
-//                break;
-//            case "visa":
-//                stringType = "Visa";
-//                break;
-//            case "mastercard":
-//                stringType = "Mastercard";
-//                break;
-//            case "discover":
-//                stringType = "Discover";
-//                break;
-//            default:
-//                match = false;
-//                break;
+//            match = false;
 //        }
+        
+        switch (sType.toLowerCase().trim())
+        {
+            case "american express":
+                stringType = "American Express";
+                break;
+            case "visa":
+                stringType = "Visa";
+                break;
+            case "mastercard":
+                stringType = "Mastercard";
+                break;
+            case "discover":
+                stringType = "Discover";
+                break;
+            default:
+                match = false;
+                break;
+        }
         return match;       
     }
     
