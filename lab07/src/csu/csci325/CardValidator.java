@@ -116,52 +116,9 @@ public class CardValidator
         
         sCardType = sCardType.toLowerCase().trim();
         
-        if (iCardType < 1 || iCardType > 4)
+        if (iCardType >= 1 && iCardType <= 4)
         {
-           switch (sCardType)
-            {
-                case "american express":
-                    //isValid = sCardNum.startsWith("3") && 
-                            //sCardNum.length() == 15;
-                    if (sCardNum.startsWith("3"))
-                    {
-                        if (sCardNum.length() == 15)
-                        {
-                            
-                        }
-                        else
-                        {
-                            isValid = false;
-                        }
-                    }
-                    else
-                    {
-                        isValid = false;
-                    }
-                    break;
-                case "visa":
-                    isValid = sCardNum.startsWith("4") && 
-                            sCardNum.length() == 16;
-                    break;
-                case "mastercard":
-                    isValid = sCardNum.startsWith("5") && 
-                            sCardNum.length() == 16;
-                    break;
-                case "discover":
-                    isValid = sCardNum.startsWith("6") && 
-                            sCardNum.length() == 16;
-                    break;
-                default:
-                    isValid = false;
-                    break;
-            } 
-        }
-        
-        if (!sCardType.equals("american express") || !sCardType.equals("visa") 
-                || !sCardType.equals("mastercard") || 
-                !sCardType.equals("discover"))
-        {
-            switch (iCardType)
+           switch (iCardType)
             {
                 case 1:
                     isValid = sCardNum.startsWith("3") && 
@@ -183,6 +140,22 @@ public class CardValidator
                     isValid = false;
                     break;
             }
+        }
+        else if (sCardType.equals("american express"))
+        {
+            isValid = sCardNum.startsWith("3") && sCardNum.length() == 15;
+        }
+        else if (sCardType.equals("visa"))
+        {
+            isValid = sCardNum.startsWith("4") && sCardNum.length() == 16;
+        }
+        else if (sCardType.equals("mastercard"))
+        {
+            isValid = sCardNum.startsWith("5") && sCardNum.length() == 16;
+        }
+        else if (sCardType.equals("discover"))
+        {
+            isValid = sCardNum.startsWith("6") && sCardNum.length() == 16;
         }
         else
         {
