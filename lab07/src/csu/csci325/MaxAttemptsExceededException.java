@@ -11,11 +11,15 @@ package csu.csci325;
  */
 public class MaxAttemptsExceededException extends Exception
 {
+    //  This exception is thrown when the max number of attempts to validate the
+    // card have been executed. A default message is displayed for the user.
     public MaxAttemptsExceededException()
     {
         super("The number of failed attempts has been reached.");
     }
     
+    //  This exception is thrown when the max number of attempts to validate the
+    // card have been executed. A custom message is displayed for the user.
     public MaxAttemptsExceededException(String s)
     {
         super(s);
