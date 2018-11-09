@@ -16,6 +16,11 @@ public class AddressVerification
     {
         
     }
+    
+    // The method checks the format first, then street address, then city, then
+    // state and zip. If any validation fails (by throwing an
+    //InvalidAddressException), this method will catch the exception, print the
+    //message of the exception, and immediately return false.
     public boolean validateAddress(String add)
     {
         boolean isValid = true;
@@ -95,6 +100,8 @@ public class AddressVerification
         return isValid;
     }
     
+    // This method verifies that the address has three sections in the format
+    // of: street address, city, state zip. 
     public boolean checkFormat(String sAddress) throws InvalidAddressException
     {
         boolean isValid = true;
@@ -111,6 +118,8 @@ public class AddressVerification
         return isValid;
     }
     
+    // This method verifies that the street address portion has two sections and
+    // is of the form: HouseNumber StreetName
     public boolean checkStreetAdd(String streetAdd)
             throws InvalidAddressException
     {
@@ -145,6 +154,7 @@ public class AddressVerification
         return isValid;
     }
     
+    // This method checks to see if the city entered is larger than 2 characters
     public boolean checkCity(String city) throws InvalidAddressException
     {
         boolean isValid = true;
@@ -160,6 +170,8 @@ public class AddressVerification
         return isValid;
     }
     
+    // This method checks to see if the state is two characters, that the zip
+    // code is a number, and that the zip code is 5 digits
     public boolean checkStateZip(String stateZip)
             throws InvalidAddressException
     {

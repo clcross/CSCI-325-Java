@@ -11,6 +11,9 @@ package csu.csci325;
  */
 public class InvalidAddressException extends Exception
 {
+    // This Exception is thrown when some portion of the address is invalid.
+    // The code that throws the invalid AddressException should pass in a String
+    // to indicate which portion of the address is invalid.
     public InvalidAddressException()
     {
         super("The address entered is not valid.");

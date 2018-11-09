@@ -24,6 +24,7 @@ public class CardValidator
         numAttempts = 0;
     }
     
+    // this method obtains a string value entered by the user
     public static String getString()
     {
         Scanner string = new Scanner(System.in);
@@ -32,6 +33,7 @@ public class CardValidator
         return input;
     }
     
+    // this method obtains an int value entered by the user
     public static int getInt()
     {
         Scanner num = new Scanner(System.in);
@@ -40,6 +42,8 @@ public class CardValidator
         return input;
     }
     
+    // This method checks the int that the user entered to verify that either 
+    // a 1,2,3 or 4 was entered
     public boolean checkType(int iType) throws MaxAttemptsExceededException
     {
         boolean match = true;
@@ -72,6 +76,8 @@ public class CardValidator
         return match;
     }
     
+    // This method checks the string that the user entered to verify that either:
+    // American Express, Visa, Mastercard, or Discover was entered
     public boolean checkType(String sType) throws MaxAttemptsExceededException
     {
         boolean match = true;
@@ -83,6 +89,8 @@ public class CardValidator
             throw new MaxAttemptsExceededException();
         }
         
+        // The comparison is not case sensitive and any spaces are trimmed from
+        // the front or end of what the user enters
         switch (sType.toLowerCase().trim())
         {
             case "american express":
@@ -104,11 +112,15 @@ public class CardValidator
         return match;       
     }
     
+    // This method returns the number of times the validation of the card type
+    // has been attempted for this instance of the CardValidation object
     public int getAttempts()
     {
         return numAttempts;
     }
     
+    // This method looks to see if the card type matches up with the 
+    // restrictions put in place
     public static boolean checkNum(String sCardNum, String sCardType, 
             int iCardType)
     {
