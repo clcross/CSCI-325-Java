@@ -199,7 +199,6 @@ public class AddressVerification
             throw new InvalidAddressException("You have entered an invalid "
                     + "zip code, goodbye.");
         } 
-          
         return isValid; 
     }
 }
