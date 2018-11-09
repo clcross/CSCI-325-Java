@@ -694,3 +694,5 @@ OK (18 tests)
 
 + 35.000 pts of 35.000
 Total grade so far: 66.460
+Auto-grader grade: 66.460
+*****************Finished lab07****************
