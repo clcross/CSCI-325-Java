@@ -33,12 +33,12 @@ E.checkType_int4 - verify exception thrown when attempts exceed 2
 E.checkType_int7 - verify exception thrown when attempts exceed 2, across all methods
 E.checkType_String - MasterCard
 E.getAttempts - no attempts made should return 0
-E
-Time: 0.024
-There were 25 failures:
+
+Time: 0.023
+There were 24 failures:
 1) testCheckType_String2(csu.csci325.CardValidatorTest)
 java.lang.NullPointerException
-	at csu.csci325.CardValidator.checkType(CardValidator.java:81)
+	at csu.csci325.CardValidator.checkType(CardValidator.java:85)
 	at csu.csci325.CardValidatorTest.testCheckType_String2(CardValidatorTest.java:204)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -71,7 +71,7 @@ java.lang.NullPointerException
 	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
 2) testCheckType_String3(csu.csci325.CardValidatorTest)
 java.lang.NullPointerException
-	at csu.csci325.CardValidator.checkType(CardValidator.java:81)
+	at csu.csci325.CardValidator.checkType(CardValidator.java:85)
 	at csu.csci325.CardValidatorTest.testCheckType_String3(CardValidatorTest.java:224)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -104,7 +104,7 @@ java.lang.NullPointerException
 	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
 3) testCheckType_String4(csu.csci325.CardValidatorTest)
 java.lang.NullPointerException
-	at csu.csci325.CardValidator.checkType(CardValidator.java:81)
+	at csu.csci325.CardValidator.checkType(CardValidator.java:85)
 	at csu.csci325.CardValidatorTest.testCheckType_String4(CardValidatorTest.java:243)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -605,7 +605,7 @@ java.lang.AssertionError: expected:<true> but was:<false>
 	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
 17) testCheckType_int(csu.csci325.CardValidatorTest)
 java.lang.NullPointerException
-	at csu.csci325.CardValidator.checkType(CardValidator.java:47)
+	at csu.csci325.CardValidator.checkType(CardValidator.java:49)
 	at csu.csci325.CardValidatorTest.testCheckType_int(CardValidatorTest.java:26)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -638,7 +638,7 @@ java.lang.NullPointerException
 	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
 18) testGetAttempts2(csu.csci325.CardValidatorTest)
 java.lang.NullPointerException
-	at csu.csci325.CardValidator.checkType(CardValidator.java:47)
+	at csu.csci325.CardValidator.checkType(CardValidator.java:49)
 	at csu.csci325.CardValidatorTest.testGetAttempts2(CardValidatorTest.java:273)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -671,7 +671,7 @@ java.lang.NullPointerException
 	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
 19) testCheckType_string5(csu.csci325.CardValidatorTest)
 java.lang.NullPointerException
-	at csu.csci325.CardValidator.checkType(CardValidator.java:81)
+	at csu.csci325.CardValidator.checkType(CardValidator.java:85)
 	at csu.csci325.CardValidatorTest.testCheckType_string5(CardValidatorTest.java:149)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -704,7 +704,7 @@ java.lang.NullPointerException
 	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
 20) testCheckType_int2(csu.csci325.CardValidatorTest)
 java.lang.NullPointerException
-	at csu.csci325.CardValidator.checkType(CardValidator.java:47)
+	at csu.csci325.CardValidator.checkType(CardValidator.java:49)
 	at csu.csci325.CardValidatorTest.testCheckType_int2(CardValidatorTest.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -737,7 +737,7 @@ java.lang.NullPointerException
 	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
 21) testCheckType_int3(csu.csci325.CardValidatorTest)
 java.lang.NullPointerException
-	at csu.csci325.CardValidator.checkType(CardValidator.java:47)
+	at csu.csci325.CardValidator.checkType(CardValidator.java:49)
 	at csu.csci325.CardValidatorTest.testCheckType_int3(CardValidatorTest.java:52)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -770,7 +770,7 @@ java.lang.NullPointerException
 	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
 22) testCheckType_int4(csu.csci325.CardValidatorTest)
 java.lang.NullPointerException
-	at csu.csci325.CardValidator.checkType(CardValidator.java:47)
+	at csu.csci325.CardValidator.checkType(CardValidator.java:49)
 	at csu.csci325.CardValidatorTest.testCheckType_int4(CardValidatorTest.java:70)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -803,7 +803,7 @@ java.lang.NullPointerException
 	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
 23) testCheckType_int7(csu.csci325.CardValidatorTest)
 java.lang.NullPointerException
-	at csu.csci325.CardValidator.checkType(CardValidator.java:47)
+	at csu.csci325.CardValidator.checkType(CardValidator.java:49)
 	at csu.csci325.CardValidatorTest.testCheckType_int7(CardValidatorTest.java:110)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -836,44 +836,8 @@ java.lang.NullPointerException
 	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
 24) testCheckType_String(csu.csci325.CardValidatorTest)
 java.lang.NullPointerException
-	at csu.csci325.CardValidator.checkType(CardValidator.java:81)
+	at csu.csci325.CardValidator.checkType(CardValidator.java:85)
 	at csu.csci325.CardValidatorTest.testCheckType_String(CardValidatorTest.java:186)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.junit.runners.Suite.runChild(Suite.java:128)
-	at org.junit.runners.Suite.runChild(Suite.java:27)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
-	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:77)
-	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
-25) testGetAttempts(csu.csci325.CardValidatorTest)
-java.lang.AssertionError: expected:<0> but was:<1>
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotEquals(Assert.java:834)
-	at org.junit.Assert.assertEquals(Assert.java:645)
-	at org.junit.Assert.assertEquals(Assert.java:631)
-	at csu.csci325.CardValidatorTest.testGetAttempts(CardValidatorTest.java:260)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -905,10 +869,10 @@ java.lang.AssertionError: expected:<0> but was:<1>
 	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
 
 FAILURES!!!
-Tests run: 33,  Failures: 25
+Tests run: 33,  Failures: 24
 
-+ 15.730 pts of 65.000
-Total grade so far: 15.730
++ 17.680 pts of 65.000
+Total grade so far: 17.680
 ******************* PART 2 AddressVerificationTest - 18 testcases *********************
 JUnit version 4.12
 .checkStateZip2 - (invalid) 30301
@@ -948,6 +912,4 @@ Time: 0.015
 OK (18 tests)
 
 + 35.000 pts of 35.000
-Total grade so far: 50.730
-Auto-grader grade: 50.730
-*****************Finished lab07****************
+Total grade so far: 52.680
