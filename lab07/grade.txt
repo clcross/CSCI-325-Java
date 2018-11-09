@@ -34,7 +34,7 @@ E.checkType_int2 - invalid entry value of 8
 .checkType_String - MasterCard
 .getAttempts - no attempts made should return 0
 
-Time: 0.021
+Time: 0.022
 There were 17 failures:
 1) testCheckNum11(csu.csci325.CardValidatorTest)
 java.lang.AssertionError: expected:<true> but was:<false>
@@ -688,11 +688,9 @@ The state and zip portion is not in the correct form.
 .checkCity - (valid) Wren
 .checkStateZip - (valid) GA 30301
 
-Time: 0.015
+Time: 0.014
 
 OK (18 tests)
 
 + 35.000 pts of 35.000
 Total grade so far: 66.460
-Auto-grader grade: 66.460
-*****************Finished lab07****************
