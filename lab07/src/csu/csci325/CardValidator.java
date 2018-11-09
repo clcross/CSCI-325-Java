@@ -44,6 +44,8 @@ public class CardValidator
     {
         boolean match = true;
         
+        numAttempts++;
+        
         if (card1.getAttempts() > 2)
         {
             throw new MaxAttemptsExceededException();
@@ -74,6 +76,8 @@ public class CardValidator
     public boolean checkType(String sType) throws MaxAttemptsExceededException
     {
         boolean match = true;
+        
+        numAttempts++;
         
         sType = sType.toLowerCase();
         sType = sType.trim();
@@ -107,7 +111,6 @@ public class CardValidator
     
     public int getAttempts()
     {
-        numAttempts++;
         return numAttempts;
     }
     
