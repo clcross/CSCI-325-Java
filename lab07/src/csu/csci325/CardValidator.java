@@ -69,7 +69,6 @@ public class CardValidator
                 match = false;
                 break;
         }
-        numAttempts = 0;
         return match;
     }
     
@@ -87,25 +86,30 @@ public class CardValidator
             throw new MaxAttemptsExceededException();
         }
         
-        switch (sType)
+        if (!sType.contains("american express") || !sType.contains("visa") || 
+                !sType.contains("mastercard") || !sType.contains("discover"))
         {
-            case "american express":
-                stringType = "American Express";
-                break;
-            case "visa":
-                stringType = "Visa";
-                break;
-            case "mastercard":
-                stringType = "Mastercard";
-                break;
-            case "discover":
-                stringType = "Discover";
-                break;
-            default:
-                match = false;
-                break;
+            match = false;
         }
-        numAttempts = 0;
+        
+//        switch (sType)
+//        {
+//            case "american express":
+//                stringType = "American Express";
+//                break;
+//            case "visa":
+//                stringType = "Visa";
+//                break;
+//            case "mastercard":
+//                stringType = "Mastercard";
+//                break;
+//            case "discover":
+//                stringType = "Discover";
+//                break;
+//            default:
+//                match = false;
+//                break;
+//        }
         return match;       
     }
     
