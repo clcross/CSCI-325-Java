@@ -17,10 +17,9 @@ public class CardValidator
     private String stringType;
     private int numAttempts;
     CardValidator card1;
-    static CardValidator card = new CardValidator();
     public CardValidator()
     {
-        //card1 = new CardValidator();
+        card1 = new CardValidator();
         numType = 0;
         stringType = "";
         numAttempts = 0;
@@ -119,20 +118,6 @@ public class CardValidator
         boolean isValid = false;
         sCardType = sCardType.toLowerCase();
         sCardType = sCardType.trim();
-        
-        
-        try
-        {
-            if (card.getAttempts() > 2)
-            {
-                throw new MaxAttemptsExceededException();
-            }
-        }
-        catch (MaxAttemptsExceededException e)
-        {
-            System.out.println(e);
-        }
-        
         
         if (iCardType < 1 || iCardType > 4)
         {
