@@ -34,11 +34,11 @@ E.checkType_int7 - verify exception thrown when attempts exceed 2, across all me
 E.checkType_String - MasterCard
 E.getAttempts - no attempts made should return 0
 
-Time: 0.023
+Time: 0.021
 There were 24 failures:
 1) testCheckType_String2(csu.csci325.CardValidatorTest)
 java.lang.NullPointerException
-	at csu.csci325.CardValidator.checkType(CardValidator.java:85)
+	at csu.csci325.CardValidator.checkType(CardValidator.java:84)
 	at csu.csci325.CardValidatorTest.testCheckType_String2(CardValidatorTest.java:204)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -71,7 +71,7 @@ java.lang.NullPointerException
 	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
 2) testCheckType_String3(csu.csci325.CardValidatorTest)
 java.lang.NullPointerException
-	at csu.csci325.CardValidator.checkType(CardValidator.java:85)
+	at csu.csci325.CardValidator.checkType(CardValidator.java:84)
 	at csu.csci325.CardValidatorTest.testCheckType_String3(CardValidatorTest.java:224)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -104,7 +104,7 @@ java.lang.NullPointerException
 	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
 3) testCheckType_String4(csu.csci325.CardValidatorTest)
 java.lang.NullPointerException
-	at csu.csci325.CardValidator.checkType(CardValidator.java:85)
+	at csu.csci325.CardValidator.checkType(CardValidator.java:84)
 	at csu.csci325.CardValidatorTest.testCheckType_String4(CardValidatorTest.java:243)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -671,7 +671,7 @@ java.lang.NullPointerException
 	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
 19) testCheckType_string5(csu.csci325.CardValidatorTest)
 java.lang.NullPointerException
-	at csu.csci325.CardValidator.checkType(CardValidator.java:85)
+	at csu.csci325.CardValidator.checkType(CardValidator.java:84)
 	at csu.csci325.CardValidatorTest.testCheckType_string5(CardValidatorTest.java:149)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -836,7 +836,7 @@ java.lang.NullPointerException
 	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
 24) testCheckType_String(csu.csci325.CardValidatorTest)
 java.lang.NullPointerException
-	at csu.csci325.CardValidator.checkType(CardValidator.java:85)
+	at csu.csci325.CardValidator.checkType(CardValidator.java:84)
 	at csu.csci325.CardValidatorTest.testCheckType_String(CardValidatorTest.java:186)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -907,11 +907,9 @@ The state and zip portion is not in the correct form.
 .checkCity - (valid) Wren
 .checkStateZip - (valid) GA 30301
 
-Time: 0.016
+Time: 0.014
 
 OK (18 tests)
 
 + 35.000 pts of 35.000
 Total grade so far: 52.680
-Auto-grader grade: 52.680
-*****************Finished lab07****************
