@@ -239,3 +239,5 @@ Tests run: 7,  Failures: 3
 
 + 28.550 pts of 50.000
 Total grade so far: 53.550
+Auto-grader grade: 53.550
+*****************Finished lab08****************
