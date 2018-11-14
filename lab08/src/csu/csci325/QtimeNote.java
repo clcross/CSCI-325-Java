@@ -27,21 +27,6 @@ public class QtimeNote implements Comparable<QtimeNote>
     @Override
     public int compareTo(QtimeNote n)
     {
-//        int retVal;
-//        
-//        if (bibBook.concat(bibVerse).equals(n.bibBook.concat(n.bibVerse)))
-//        {
-//            retVal = 0;
-//        }
-//        else if (bibBook.concat(bibVerse).compareTo(n.bibBook.concat(n.bibVerse)))
-//        {
-//            
-//        }
-//        else
-//        {
-//            retVal = -1;
-//        }
-        
         return bibBook.concat(bibVerse).compareTo(n.bibBook.concat(n.bibVerse));
     }
     
