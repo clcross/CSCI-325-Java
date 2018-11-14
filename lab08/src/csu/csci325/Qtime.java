@@ -5,6 +5,8 @@
  */
 package csu.csci325;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -15,10 +17,10 @@ import java.util.List;
 public class Qtime
 {
     List<QtimeNote> qNoteList;
+    
     public Qtime()
     {
-        qNoteList = new LinkedList<>();
-        qNoteList.clear();
+        qNoteList = new LinkedList<>(null);
     }
     
     public List<QtimeNote> getNoteList()
@@ -38,7 +40,7 @@ public class Qtime
     
     public void removeNotes(String book)
     {
-        qNoteList.remove(book);
+        qNoteList.remove(qNoteList.indexOf(book));
     }
     
     public void updateUserNote(QtimeNote qTimeNote, String userNotes)
@@ -48,6 +50,12 @@ public class Qtime
     
     public void sortNotes()
     {
-        //qNoteList = qNoteList.sort();
+        Collections.sort(qNoteList, new Comparator<QtimeNote>() {
+            @Override
+            public int compare(QtimeNote n, QtimeNote m)
+            {
+                return n.compareTo(m);
+            }
+        });
     }
 }
