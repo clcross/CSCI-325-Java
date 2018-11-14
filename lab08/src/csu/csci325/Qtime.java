@@ -50,5 +50,4 @@ public class Qtime
     {
         //qNoteList = qNoteList.sort();
     }
-    
 }
