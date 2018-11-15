@@ -13,15 +13,17 @@ import java.util.Date;
  */
 public class QtimeNote implements Comparable<QtimeNote>
 {
-    Date date;
-    String bibBook;
-    String bibVerse;
-    String bibNote;
+    public Date date;
+    public String bibBook;
+    public String bibVerse;
+    public String bibNote;
+    
     public QtimeNote(String book, String verse, String note)
     {
         bibBook = book;
         bibVerse = verse;
         bibNote = note;
+        date = new Date();
     }
     
     @Override
@@ -32,7 +34,6 @@ public class QtimeNote implements Comparable<QtimeNote>
     
     public Date getDate()
     {
-        date = new Date();
        return date; 
     }
     
@@ -53,6 +54,6 @@ public class QtimeNote implements Comparable<QtimeNote>
     
     public void updateUserNotes(String userNotes)
     {
-        bibNote = userNotes;
+        bibNote += userNotes;
     }
 }
