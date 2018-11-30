@@ -26,7 +26,7 @@ public class Compress {
         int elementCount = 0;
         
         if (s == null || s.length() == 0){
-            return null;
+            return s;
         }
             
         for (int i = 0; i < charArray.length; i++){
