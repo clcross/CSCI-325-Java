@@ -5,6 +5,7 @@
  */
 package csu.csci325;
 
+import java.util.EmptyStackException;
 import java.util.Stack;
 
 /**
@@ -39,10 +40,10 @@ public class ConvertExp {
                 }
             }
             else{
-            throw new Exception();
+                isO = false;
             }
         }
-        catch(Exception e){
+        catch(EmptyStackException e){
             System.out.println("Malformed Input");
         }
         
@@ -67,7 +68,7 @@ public class ConvertExp {
             } 
             infix = s.pop();
         }
-        catch(Exception e){
+        catch(NullPointerException | EmptyStackException e){
             System.out.println("Malformed Input");
         }
 
@@ -92,7 +93,7 @@ public class ConvertExp {
             } 
             infix = s.pop();
         }
-        catch(Exception e){
+        catch(NullPointerException | EmptyStackException e){
             System.out.println("Malformed Input");
         }
 
