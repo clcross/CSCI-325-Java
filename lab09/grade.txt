@@ -153,3 +153,5 @@ OK (7 tests)
 
 + 33.333 pts of 33.333
 Total grade so far: 74.999
+Auto-grader grade: 74.999
+*****************Finished lab09****************
