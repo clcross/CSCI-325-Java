@@ -215,3 +215,5 @@ tests/csu/csci325/PalindromeTest.java:83: error: cannot find symbol
   location: class Palindrome
 7 errors
 Compilation errors, please fix...
+Auto-grader grade: 23.799
+*****************Finished lab09****************
