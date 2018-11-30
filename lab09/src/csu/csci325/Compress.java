@@ -6,6 +6,7 @@
 package csu.csci325;
 
 import java.util.ArrayList; 
+import java.util.EmptyStackException;
 import java.util.Stack;
 
 /**
@@ -25,22 +26,34 @@ public class Compress {
         char[] charArray = s.toCharArray();
         int elementCount = 0;
         
-        if (s == null || s.length() == 0){
-            return null;
-        }
-            
-        for (int i = 0; i < charArray.length; i++){
-            char currentElement = charArray[i];
-            if (i == 0){
-                stack.push((currentElement+""));
-                continue;
-            } 
-            else{
-                if ((currentElement+"").equalsIgnoreCase((String)stack.peek())){
-                    stack.push(currentElement + "");
-                    
-                    if(i==charArray.length-1)
-                    {
+        
+        try{
+            for (int i = 0; i < charArray.length; i++){
+                char currentElement = charArray[i];
+                if (i == 0){
+                    stack.push((currentElement + ""));
+                    continue;
+                } 
+                else{
+                    if((currentElement + "").equalsIgnoreCase((String)stack.peek())){
+                        stack.push(currentElement + "");
+
+                        if(i==charArray.length-1)
+                        {
+                            while (!stack.isEmpty()){
+
+                                lastElement = (String)stack.pop();
+                                elementCount++;
+                            }
+
+                            finalCompressedString += lastElement + "" + 
+                                    elementCount;
+                        }
+                        else{
+                           continue; 
+                        }
+                    }
+                    else{
                         while (!stack.isEmpty()){
 
                             lastElement = (String)stack.pop();
@@ -48,23 +61,14 @@ public class Compress {
                         }
 
                         finalCompressedString += lastElement + "" + elementCount;
+                        elementCount=0;
+                        stack.push(currentElement + "");
                     }
-                    else{
-                       continue; 
-                    }
-                }
-                else{
-                    while (!stack.isEmpty()){
-
-                        lastElement = (String)stack.pop();
-                        elementCount++;
-                    }
-                    
-                    finalCompressedString += lastElement + "" + elementCount;
-                    elementCount=0;
-                    stack.push(currentElement+"");
                 }
             }
+        }
+        catch(NullPointerException | EmptyStackException e){
+            System.out.println("Malformed Input");
         }
         if (finalCompressedString.length() >= s.length()){
             return s;
