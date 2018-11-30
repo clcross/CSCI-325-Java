@@ -13,14 +13,64 @@ import java.util.Stack;
  * @author Cameron Cross
  */
 public class Compress {
-    
+    Stack<String> stack;
     public Compress(){
-         
+        stack = new Stack<>();
     }
     
     public String compress(String s){
-        String con = null; 
         
-        return con;
+        String finalCompressedString = "";
+        String lastElement="";
+        char[] charArray = s.toCharArray();
+        int elementCount = 0;
+        
+        if (s == null || s.length() == 0){
+            return null;
+        }
+            
+        for (int i = 0; i < charArray.length; i++){
+            char currentElement = charArray[i];
+            if (i == 0){
+                stack.push((currentElement+""));
+                continue;
+            } 
+            else{
+                if ((currentElement+"").equalsIgnoreCase((String)stack.peek())){
+                    stack.push(currentElement + "");
+                    
+                    if(i==charArray.length-1)
+                    {
+                        while (!stack.isEmpty()){
+
+                            lastElement = (String)stack.pop();
+                            elementCount++;
+                        }
+
+                        finalCompressedString += lastElement + "" + elementCount;
+                    }
+                    else{
+                       continue; 
+                    }
+                }
+                else{
+                    while (!stack.isEmpty()){
+
+                        lastElement = (String)stack.pop();
+                        elementCount++;
+                    }
+                    
+                    finalCompressedString += lastElement + "" + elementCount;
+                    elementCount=0;
+                    stack.push(currentElement+"");
+                }
+            }
+        }
+        if (finalCompressedString.length() >= s.length()){
+            return s;
+        }
+        else{
+            return finalCompressedString;
+        }
     }
 }
