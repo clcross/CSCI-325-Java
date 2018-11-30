@@ -19,16 +19,18 @@ public class Palindrome {
         boolean retVal;
         String str;
         String temp = s.trim();
+        
         temp = s.toUpperCase();
-        str = temp.replaceAll("[*A-Z]", "");
+        str = temp.replaceAll("[^A-Z]", "");
         retVal = isIt(str);
         return retVal;
     }
     
     public static boolean isIt(String s){
-        int last = s.length() - 1;
-        String str;
+        int last = s.length()-1;
         boolean retVal = true;
+        String str;
+        
         if(s.length() <= 1 && s.length() >= 0){
             retVal = true;
         }
