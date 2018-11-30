@@ -20,7 +20,7 @@ public class Palindrome {
         String str;
         String temp = s.trim();
         temp = s.toUpperCase();
-        str = temp.replaceAll("[A-Z]", "");
+        str = temp.replaceAll("[*A-Z]", "");
         retVal = isIt(str);
         return retVal;
     }
