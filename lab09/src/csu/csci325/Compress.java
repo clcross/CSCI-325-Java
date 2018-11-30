@@ -13,12 +13,12 @@ import java.util.Stack;
  * @author Cameron Cross
  */
 public class Compress {
-    Stack<String> stack;
+    private static Stack<String> stack;
     public Compress(){
         stack = new Stack<>();
     }
     
-    public String compress(String s){
+    public static String compress(String s){
         
         String finalCompressedString = "";
         String lastElement="";
