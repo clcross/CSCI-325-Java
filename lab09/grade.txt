@@ -33,7 +33,7 @@ Malformed Input
 Malformed Input
 .preToInfix:  *+AB-CD
 
-Time: 0.012
+Time: 0.013
 
 OK (14 tests)
 
@@ -49,7 +49,7 @@ E.checkPal5: A man, a plan, a cat, a ham, a yak, a yam, a hat, a canal-Panama!
 E.checkPal6: Anna Banana
 E.checkPal7: This is not a palindrome.
 
-Time: 0.015
+Time: 0.014
 There were 3 failures:
 1) testCheckPal4(csu.csci325.PalindromeTest)
 java.lang.AssertionError: expected:<true> but was:<false>
@@ -165,5 +165,3 @@ Tests run: 7,  Failures: 3
 
 + 19.033 pts of 33.333
 Total grade so far: 52.366
-Auto-grader grade: 52.366
-*****************Finished lab09****************
