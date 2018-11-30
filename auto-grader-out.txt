@@ -1,28 +1,2 @@
-I am run number 002422.
+I am run number 002423.
 Pulling source code...
-------------------------------------------------
-Changes found in lab09
-------------------------------------------------
-*****************Examining lab09****************
-******************* PART 1 Compress Test*********************
-*************COMPILATION ERROR*******************
-src/csu/csci325/Compress.java:9: error: package sun.invoke.empty does not exist
-import sun.invoke.empty.Empty;
-                       ^
-1 error
-Compilation errors, please fix...
-******************* PART 2 Convert Expression Test*********************
-*************COMPILATION ERROR*******************
-src/csu/csci325/Compress.java:9: error: package sun.invoke.empty does not exist
-import sun.invoke.empty.Empty;
-                       ^
-1 error
-Compilation errors, please fix...
-******************* PART 3 Palindrome Test*********************
-*************COMPILATION ERROR*******************
-src/csu/csci325/Compress.java:9: error: package sun.invoke.empty does not exist
-import sun.invoke.empty.Empty;
-                       ^
-1 error
-Compilation errors, please fix...
-Auto-grader grade: *****************Finished lab09****************
