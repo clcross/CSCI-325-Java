@@ -54,7 +54,7 @@ public class ConvertExp {
         Stack<String> s = new Stack<>();
         String infix = null;
         try{
-            for (int i = exp.length() - 1; i >= 0; i++){
+            for (int i = exp.length() - 1; i >= 0; i--){
                 String op = exp.substring(i, i+1);
                 if (isOperator(op)){ 
                    String valOne = s.pop();
