@@ -33,7 +33,7 @@ Malformed Input
 Malformed Input
 .preToInfix:  *+AB-CD
 
-Time: 0.012
+Time: 0.013
 
 OK (14 tests)
 
@@ -55,5 +55,3 @@ OK (7 tests)
 
 + 33.333 pts of 33.333
 Total grade so far: 66.666
-Auto-grader grade: 66.666
-*****************Finished lab09****************
