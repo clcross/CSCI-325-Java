@@ -1,12 +1,3 @@
-I am run number 002314.
-Pulling source code...
-------------------------------------------------
-Changes found in create
-Changes found in lab09
-------------------------------------------------
-*****************Examining create****************
-Auto-grader grade: *****************Finished create****************
-*****************Examining lab09****************
 ******************* PART 1 Compress Test*********************
 *************COMPILATION ERROR*******************
 tests/csu/csci325/CompressTest.java:28: error: non-static method compress(String) cannot be referenced from a static context
@@ -237,5 +228,3 @@ tests/csu/csci325/PalindromeTest.java:83: error: cannot find symbol
   location: class Palindrome
 7 errors
 Compilation errors, please fix...
-Auto-grader grade: 23.799
-*****************Finished lab09****************
